@@ -10,6 +10,8 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.PreparedStatementSetter;
+
+import diction.DicVO;
 /*
  JdbcTemplate 관련 주요 메소드
  
@@ -44,7 +46,7 @@ public class JDBCTemplateDAO {
 	public void close() {
 		//JDBCTemplate에서는 사용하지 않음
 	}
-	
+	/*
 	public int getTotalCount(Map<String, Object> map) {
 		
 		String query = "SELECT COUNT(*) FROM springboard";
@@ -103,25 +105,23 @@ public class JDBCTemplateDAO {
 			}
 		});
 	}
-	
-	public SpringBbsDTO view(String idx) {
+	*/
+	public DicVO view(String word) {
 		
-		updateHit(idx);
+		DicVO dto = null;
 		
-		SpringBbsDTO dto = null;
-		
-		String sql = "SELECT * FROM springboard "
-				+ " WHERE idx = "+idx;
+		String sql = "SELECT * FROM global_dic "
+				+ " WHERE title like '%"+word+"%'";
 		//웹브라우저 주소창의 idx값을 임의로 변경하는 경우 예외가 발생할 수 있으므로 예외처리 해주는 것이 좋다.
 		try {
-			dto = template.queryForObject(sql, new BeanPropertyRowMapper<SpringBbsDTO>(
-					SpringBbsDTO.class));
+			dto = template.queryForObject(sql, new BeanPropertyRowMapper<DicVO>(
+					DicVO.class));
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 		return dto;
 	}
-	
+	/*
 	public void updateHit(final String idx) {
 		
 		//매개변수를 익명클래스에서 사용해야 하므로 값의 보장을 위해 final로 선언해야 한다.
@@ -143,10 +143,10 @@ public class JDBCTemplateDAO {
 	
 	public int password(String idx, String pass) {
 		
-		/*
+		
 		패스워드 검증을 위해 select한 후 조건에 맞는 레코드가 있다면
 		해당 게시물의 idx값을 반환하고 없다면 0을 반환한다.
-		 */
+		 
 		int boardIdx = 0;
 		String sql = "SELECT * FROM springboard WHERE pass= "+pass+" AND idx= "+idx;
 		//queryForObject는 실행결과가 1이 아니면 무조건 예외가 발생된다. 예외처리해주어야함
@@ -231,10 +231,10 @@ public class JDBCTemplateDAO {
 	
 	//답변글 입력전 레코드 일괄 업데이트
 	public void replyPrevUpdate(final int strGroup, final int strStep){
-		/*
+		
 		 * 현재 답변글이 작성되는 위치(bstep)를 확인하여 
 		 * 해당 위치보다 큰 레코드를 일괄적으로 +1 처리한다.
-		 */		
+		 		
 		String query = "UPDATE springboard "
 				+ " SET bstep=bstep+1 "
 				+ " WHERE bgroup=? AND bstep>?";
@@ -247,6 +247,6 @@ public class JDBCTemplateDAO {
 				psmt.setInt(2, strStep);
 			}
 		});
-		
 	}
+	*/
 }

@@ -193,11 +193,6 @@ public class ApagoController {
 		return "member/join";
 	}
 	
-	@RequestMapping("/diction/diction.do")
-	public String diction(Model model, HttpSession session) {
-		return "diction/dictionary";
-	}
-	
 	@RequestMapping("/chat")
 	public String sock(Model model, HttpSession session) {
 		

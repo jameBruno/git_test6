@@ -1,7 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
    pageEncoding="UTF-8"%>
-
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%
+pageContext.setAttribute("CRLF", "\r\n");
+pageContext.setAttribute("BR", "<br/>");
+%>
 <!DOCTYPE html>
  
 <head>
@@ -35,8 +39,32 @@
 <!-- 상단 영역 -->
 <%@ include file="../include/sourcecopy_header.jsp" %>
 <div class="container">
-	<%@ include file="left_menu.jsp" %>
-	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<div class="col-xs-3 col-md-3">
+		<!-- 좌측영역 -->
+		<%@ include file="left_menu.jsp" %>
+	</div>
+	<div class="col-xs-9 col-md-9">	
+	<!-- Contents영역 시작-->
+		<h3>검색결과</small></h3>
+		<table class="table table-bordered table-striped">
+		<colgroup>
+			<col width="20%"/>
+			<col width="*"/>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th class="text-center" style="vertical-align:middle;">제목</th>
+				<td>${viewRow.title }</td>
+			</tr>
+			<tr>
+				<th class="text-center" style="vertical-align:middle;">내용</th>
+				<td>
+					${viewRow.dic_contents}					
+				</td>
+			</tr>
+		</tbody>
+		</table>
+	</div>
 </div>
 <%@ include file="../include/sourcecopy_bottom.jsp" %>
 </body>
