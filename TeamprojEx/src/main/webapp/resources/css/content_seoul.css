@@ -1,0 +1,258 @@
+@charset "utf-8";
+/*------------------------------------------------------------------------------------------------------------------------------------------
+	File :content.css
+	Company :The Webstyle co.,ltd
+ 	CSS 적용순서 :아이디 > 태그와 클래스 > 클래스 > 태그
+	CSS 선택자 선언순서 :Type Selector, Layout Selector, Class Selector, Etc
+	CSS 속성 선언순서 :display, position, float/clear, overflow, width/height, margin/padding, border, background, color/font, align, etc
+	이 CSS에는 각 서울백병원만 다른 스타일로 변경된 경우나 새로 추가된 페이지의 스타일만 추가합니다.
+--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* ui-style 변경 */
+.tab-wrap .tab-nav > li.current > a:after,
+.tab-wrap .tab-nav li.ui-state-active > a:after {background-image:url(/seoul/images/common/icon_sprite.png);}
+.ui-selectbox {background-image:url('/seoul/images/common/icon_selectbox02.png');}
+
+/* Header */
+#header .bg-lnb {top:150px;}
+
+/* Main Contents */
+.seoul-wrapper .main .section04 {background-color:transparent;}
+.main .section05 {background-color:#e7e4dd;}
+
+/* 메인 - notice 20180312 추가 */
+.news-ticker {position: relative;}
+.news-ticker:before {position: absolute; top: 50%; left: 0; margin-top:-13px; }
+.news-ticker .bxslider {display: inline-block; margin-left:78px; }
+
+.seoul-wrapper .visual-wrap.type2 .img-area li {width:356px !important;}
+
+.center-banner .slider1 {background-image:url(/seoul/images/main/bn_center01.jpg);}
+.center-banner .slider2 {background-image:url(/seoul/images/main/bn_center02.jpg);}
+.center-banner .slider3 {background-image:url(/seoul/images/main/bn_center03.jpg);}
+.center-banner .slider4 {background-image:url(/seoul/images/main/bn_center04.jpg);}
+.center-banner .slider5 {background-image:url(/seoul/images/main/bn_center05.jpg);}
+.center-banner .slider6 {background-image:url(/seoul/images/main/bn_center06.jpg);}
+.center-banner .slider7 {background-image:url(/seoul/images/main/bn_center07.jpg);}
+.center-banner .slider8 {background-image:url(/seoul/images/main/bn_center08.jpg);}
+
+.press-box figcaption:before {background-image:url(/seoul/images/common/icon_sprite.png);}
+.link-box {height:270px; padding:40px 21px; background-color:#fff;}
+.link-box > a {display:block; height:100%;}
+.link-box .tit {font-size:16px; color:#ffffff; font-family:'NotoSans-Light';}
+.link-box .tit strong {display:block; font-size:20px; font-weight:normal; font-family:'NotoSans-Regular';}
+.link-box.health-tv {padding-top:164px; background:#ffb900 url(/seoul/images/main/bg_tv.png) no-repeat right bottom;}
+.link-box.health-tv .btn-link {display:inline-block; height:auto; margin-top:17px;}
+.link-box.naver-post {padding-top:30px; background:#a9b3b3 url(/seoul/images/main/bg_post.png) no-repeat right bottom;}
+.link-box.naver-post em {display:block; position:relative; padding-bottom:10px; color:#fff;}
+.link-box.naver-post em:after {content:''; position:absolute; left:0; bottom:0; width:35px; height:1px; background-color:#fff;}
+.link-box.naver-post strong {margin-top:10px; color:#fff;}
+
+.news-box, .service-link {background-color:#f8f8f8;}
+
+.service-link li.link-recruit a {background:url(/seoul/images/main/ico_serviceLink01.png) no-repeat 20px 50%;}
+.service-link li.link-bidding a {background:url(/seoul/images/main/ico_serviceLink02.png) no-repeat 20px 50%;}
+.service-link li.link-healthChair a {background:url(/seoul/images/main/ico_serviceLink03.png) no-repeat 20px 50%;}
+
+
+/* Sub Contents */
+.cont.qna dt, .cont.qna dd {position:relative; padding-left:25px; font-size:16px; line-height:22px;}
+.cont.qna dt:before {content:'Q.'; position:absolute; left:0; top:0; color:#926a2d;}
+.cont.qna dd:before {content:'A.'; position:absolute; left:2px; top:0; color:#926a2d;}
+.cont.qna dt {color:#444;}
+
+.issue-stepS + .tit-cont {margin-top:42px;}
+.issue-stepS.step_color01 li {background-color:#e6a43f;}
+.issue-stepS.step_color02 li {background-color:#f59434;}
+.issue-stepS.step_color03 li {background-color:#c59859;}
+.issue-stepS.step_color04 li {background-color:#926a2d;}
+
+.download-list li div .btn.btn_align01 {margin:30px 0 28px;}
+.download-list.type2 li {width:255px;}
+.download-list.type2 li:first-child {margin-left:0;}
+.download-list.type2 li div {height:324px; padding-left:28px; padding-right:29px;}
+.download-list.type2 li div .btn {width:100%; padding:0 10px;}
+.download-list.type2 li div .btn .ico-download {float:right; margin-top:13px;}
+
+/* 병원소개 - 인사말 */
+.seoul-wrapper .intro {position:relative; background:url(/seoul/images/intro/imgDirector.jpg) right 0 no-repeat;}
+.seoul-wrapper .name-card {top:340px; right:25px; width:283px;}
+
+/* 병원소개 - 역대병원장 */
+.seoul-wrapper .director-list.type-wide .profile .img {float:none;}
+.seoul-wrapper .director-list.type-wide .history {position:absolute; right:0; top:70px; width:526px;}
+
+/* 병원소개 - 조직도 */
+.seoul-wrapper .organization-wrap {padding:0; border:0;}
+
+/* 병원소개 - 연혁 */
+.seoul-wrapper .year-box .box-left {padding-left:60px;}
+.seoul-wrapper .year-box .year2017 {margin-top:0;}
+.seoul-wrapper .year-box .year2016 {margin-top:0;}
+.seoul-wrapper .year-box .year2015 {margin-top:-370px;}
+.seoul-wrapper .year-box .year2014 {margin-top:-100px;}
+.seoul-wrapper .year-box .year2013 {margin-top:-245px;}
+.seoul-wrapper .year-box .year2012 {margin-top:0;}
+.seoul-wrapper .year-box .year2011 {margin-top:-100px;}
+.seoul-wrapper .year-box .year2010 {margin-top:-100px;}
+.seoul-wrapper .year-box .year2009 {margin-top:-100px;}
+.seoul-wrapper .year-box .year2008 {margin-top:-200px;}
+.seoul-wrapper .year-box .year2007 {margin-top:50px;}
+.seoul-wrapper .year-box .year2006 {margin-top:-100px;}
+.seoul-wrapper .year-box .year2005 {margin-top:0;}
+.seoul-wrapper .year-box .year2004 {margin-top:0;}
+.seoul-wrapper .year-box .year2003 {margin-top:-200px;}
+.seoul-wrapper .year-box .year2002 {margin-top:-100px;}
+.seoul-wrapper .year-box .year2001 {margin-top:-250px;}
+.seoul-wrapper .year-box .year2000 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1999 {margin-top:-50px;}
+.seoul-wrapper .year-box .year1998 {margin-top:0;}
+.seoul-wrapper .year-box .year1997 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1996 {margin-top:50px;}
+.seoul-wrapper .year-box .year1995 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1994 {margin-top:100px;}
+.seoul-wrapper .year-box .year1993 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1992 {margin-top:-50px;}
+.seoul-wrapper .year-box .year1991 {margin-top:0;}
+.seoul-wrapper .year-box .year1990 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1989 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1988 {margin-top:50px;}
+.seoul-wrapper .year-box .year1988 {margin-top:0;}
+.seoul-wrapper .year-box .year1987 {margin-top:-150px;}
+.seoul-wrapper .year-box .year1986 {margin-top:50px;}
+.seoul-wrapper .year-box .year1985 {margin-top:-200px;}
+.seoul-wrapper .year-box .year1984 {margin-top:100px;}
+.seoul-wrapper .year-box .year1983 {margin-top:-205px;}
+.seoul-wrapper .year-box .year1982 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1981 {margin-top:-30px;}
+.seoul-wrapper .year-box .year1980 {margin-top:-50px;}
+.seoul-wrapper .year-box .year1979 {margin-top:-90px;}
+.seoul-wrapper .year-box .year1978 {margin-top:-200px;}
+.seoul-wrapper .year-box .year1977 {margin-top:30px;}
+.seoul-wrapper .year-box .year1976 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1975 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1974 {margin-top:0;}
+.seoul-wrapper .year-box .year1973 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1972 {margin-top:50px;}
+.seoul-wrapper .year-box .year1971 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1970 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1969 {margin-top:40px;}
+.seoul-wrapper .year-box .year1961 {margin-top:-100px;}
+.seoul-wrapper .year-box .year1957 {margin-top:40px;}
+.seoul-wrapper .year-box .year1951 {margin-top:-50px;}
+.seoul-wrapper .year-box .year1946 {margin-top:-30px;}
+.seoul-wrapper .year-box .year1940 {margin-top:-50px;}
+.seoul-wrapper .year-box .year1884 {margin-top:-75px;}
+
+/* 병원소개 - 미션/비전/핵심가치 */
+.seoul-wrapper .vision-wrap {background:url(/seoul/images/intro/line_bg.png) no-repeat center 381px;}
+.seoul-wrapper .vision-wrap .vision {background-image:url(/seoul/images/intro/circle_bg.png);}
+.seoul-wrapper .vision-wrap .vision h3 {margin-top: 130px; font-size:19px; color:#444; font-family:'NotoSans-Regular';}
+.seoul-wrapper .vision-wrap .vision strong {display:block; margin-top:5px;}
+.seoul-wrapper .vision-wrap .vision em {display:block; color:#613f00; font-size:26px;}
+.seoul-wrapper .vision-list {}
+.seoul-wrapper .vision-list li {width:645px; float:none; margin:auto;}
+.seoul-wrapper .vision-list li .box {display:block; width:100%; height:107px; padding-top:28px; background-color:#e6a43f; border-radius:32px 0 32px 0; box-shadow:2px 10px 10px #e3e3e3; text-align:center;}
+.seoul-wrapper .vision-list li .box b {display:block; height:30px; margin-top:15px; vertical-align:10px;}
+.seoul-wrapper .vision-list li .box b.circle-line1 {line-height:30px;}
+.seoul-wrapper .vision-list li .box em {display:block; font-size:19px; color:#fff;}
+.seoul-wrapper .vision-box {margin-top:410px;}
+.seoul-wrapper .vision-box div {float: left;}
+.seoul-wrapper .vision-box div:first-child {margin-left:0px;}
+.seoul-wrapper .vision-box .box-type {width:254px; height:190px; margin-left:24px; padding-top:28px; background-color:#fff; text-align:center;}
+.seoul-wrapper .vision-box .box-type em {display:block; font-family:"NotoSans-Regular"; font-size:16px; color:#bababa;}
+.seoul-wrapper .vision-box .box-type p {font-size:16px; line-height:1.5;}
+.seoul-wrapper .vision-box .core-value {width:130px; margin:0 auto; text-align:left; font-size:14px; color:#b9b9b9;}
+.seoul-wrapper .vision-box .core-value li {margin:3px 0;}
+.seoul-wrapper .vision-box .core-value li strong {margin-right:7px; font-size:16px; color:#444;}
+
+
+.seoul-wrapper .work-step {background:url(/seoul/images/info/bg_socialWork.png) no-repeat;}
+
+/* 진료절차*/
+.seoul-wrapper .step-guide span:before {background:url(/seoul/images/info/ico_step.png) no-repeat;}
+
+.seoul-wrapper .step-guide.type2 {position:relative; height:180px; background-image:none;}
+.seoul-wrapper .step-guide.type2:before {content:''; position:absolute; left:0; top:90px; width:810px; height:16px; background:url(/seoul/images/info/bg_step_4ea.png) no-repeat; z-index:-1;}
+.seoul-wrapper .step-guide.type2 li {margin-left:28px;}
+.seoul-wrapper .step-guide.type2 li:first-child {margin-left:21px;}
+.seoul-wrapper .step-guide.type2 li span {width:170px; height:170px;}
+.seoul-wrapper .step-guide.type2 li span:before {margin:27px auto 10px;}
+.seoul-wrapper .step-guide.type2 li span b {color:#fff; opacity:.7;}
+.seoul-wrapper .step-guide.type2 li em {width:100%;}
+.seoul-wrapper .step-guide.type2 .step04 {margin-right:0;}
+/* .seoul-wrapper .step-guide.type2 .step01 {left:21px;}
+.seoul-wrapper .step-guide.type2 .step02 {left:221px;}
+.seoul-wrapper .step-guide.type2 .step03 {left:421px;}
+.seoul-wrapper .step-guide.type2 .step04 {left:621px; margin-left:0;} */
+.seoul-wrapper .step-guide.type2 .circle02:before {width:55px; background-position:-64px 0;}
+.seoul-wrapper .step-guide.type2 .circle03:before {width:46px; background-position:-121px 0;}
+.seoul-wrapper .step-guide.type2 .circle04:before {width:60px; background-position:-169px 0;}
+
+.srch-tell .srch02 .input_srch {width:602px;}
+
+/* 찾아오시는길 */
+.map-wrap .adress dd:after {content:""; display:block; margin:19px 0 0 -130px; height:1px; background:#ccc;}
+.map-wrap .adress dd.last:after {display:none;}
+
+.busstop-wrap dl dt:after {margin-top:18px;}
+
+.subway-wrap .txt-num01 {color:#0041aa;}
+.subway-wrap .txt-num02 {color:#1abc2d;}
+.subway-wrap .txt-num03 {color:#ff7300;}
+.subway-wrap .txt-num04 {color:#1e89d0;}
+.subway-wrap .txt-num05 {color:#6f0ecf;}
+.subway-wrap .txt-num06 {color:#9a5e33;}
+.subway-wrap .txt-num07 {color:#606d1a;}
+.subway-wrap .txt-num08 {color:#d70473;}
+.subway-wrap .txt-num09 {color:#bf9b04;}
+.subway-wrap .txt-center {color:#19ccb9;}
+.subway-wrap .txt-airport {color:#64e2ff;}
+
+.tit-dotLine {position:relative; width:100%; padding-bottom:20px; font-family:'NotoSans-Bold'; font-style:normal; font-size:20px; color:#222;}
+.tit-dotLine:after {content:''; position:absolute; left:0; bottom:0; width:100%; height:1px; background:url(/seoul/images/info/bg_dotLine.jpg) repeat-x;}
+.tit-dotLine + .subway-wrap {margin-top:14px;}
+.subway-wrap + .subway-wrap {margin-top:30px; border-top:1px solid #dcdcdc;}
+.subway-wrap.type2 {position:relative; overflow:hidden; padding-left:89px;}
+.subway-wrap.type2:after {content:''; position:absolute; left:0; top:16px; width:69px; height:69px; background:url(/seoul/images/info/ico_bus.png) no-repeat left top;}
+.subway-wrap.type2.airport {min-height:130px; padding-top:20px; padding-bottom:40px; border-bottom:1px solid #aeaeae;}
+.subway-wrap.type2.airport:after {top:20px; background:url(/seoul/images/info/ico_airport.png);}
+.subway-wrap.type2 .subway {clear:both; padding-bottom:0; border-bottom:0;}
+.subway-wrap.type2 .subway dt {width:110px; padding-right:10px; margin-right:9px; font-size:18px; line-height:25px; color:#666;}
+.subway-wrap.type2 .subway dt.arrow-r {position:relative;}
+.subway-wrap.type2 .subway dt.arrow-r:after {content:''; position:absolute; right:0; top:8px; width:6px; height:10px; background:url(../../images/info/ico_arrow.png) no-repeat;}
+.subway-wrap.type2 .subway dd {margin-left:0; font-size:16px; color:#444;}
+.subway-wrap.type2 .subway dd .ico-arrNext {display:inline-block; width:14px; height:10px; margin:-1px 10px 0; background:url(/seoul/images/info/ico_arrNext.png) no-repeat left top;}
+/*// 찾아오시는길 */
+
+/* 간호간병서비스 */
+.nursing_care.img-area {clear:both; overflow:hidden; margin:24px 0;}
+.nursing_care.img-area img {border:1px solid #dcdcdc;}
+.nursing_care.img-area .img-left {width:405px;}
+.nursing_care.img-area .img-right {width:386px;}
+/*// 간호간병서비스 */
+
+/* 진료과 */
+.department-list > ul > li .sub a .ico-menu01:before {background:url(/seoul/images/treat/icon_sprite_treatment.png) no-repeat 0 0;}
+.department-list > ul > li .sub a .ico-menu02:before {background:url(/seoul/images/treat/icon_sprite_treatment.png) no-repeat -20px 0;}
+
+.department-list.no_icon > ul > li {width:154px; height:105px;}
+.department-list.no_icon > ul > li > span.tit {height:100%;}
+.department-list.no_icon > ul > li > span.tit > strong {border-bottom:0; line-height:22px;}
+.department-list.no_icon > ul > li.hover > span.tit {display:none;}
+.department-list.no_icon > ul > li > .conts {display:none;}
+.department-list.no_icon > ul > li.hover > .conts {display:block; top:0;}
+/*// 진료과 */
+
+/* 진료과 상세 */
+.box-comb.no_icon p {padding-right:37px;}
+
+/* 진료과 선택 */
+.medical-card.selected:after {background:url(/seoul/images/common/icon_sprite.png) no-repeat -238px 0;}
+
+/* 의사목록 전문과목 사이즈, 2018.04.27 */
+.doctor-list .info ul {width:400px}
+
+/* 예약 달력화면의 툴팁 사이즈, 위치 조정, 2018.05.14 */
+.reserv-form .ui-datepicker-calendar .ui-tooltip {width:80px; left:0; bottom:-12px}
+.reserv-date .reserv-phone-box {position:absolute; bottom:-8px; width:100%; font-size:14px; text-align:center; padding:10px; background-color:#926a2d; color:#FFF}

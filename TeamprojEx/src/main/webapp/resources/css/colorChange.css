@@ -1,0 +1,725 @@
+@charset "utf-8";
+/*------------------------------------------------------------------------------------------------------------------------------------------
+	File :colorChange.css
+	Company :The Webstyle co.,ltd
+ 	CSS 적용순서 :아이디 > 태그와 클래스 > 클래스 > 태그
+	CSS 선택자 선언순서 :Type Selector, Layout Selector, Class Selector, Etc
+	CSS 속성 선언순서 :display, position, float/clear, overflow, width/height, margin/padding, border, background, color/font, align, etc
+--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+	서울백병원 색상 변경
+------------------------------------------------------------------------------------------------------------------------------------------*/
+/* 병원별 색상변경 : ui-style */
+body.seoul-wrapper .srch-part .input-srch {border-color:#606e79;}
+body.seoul-wrapper .label-form label > input:checked ~ span {color:#3a414f;}
+body.seoul-wrapper .label-form label > input:checked ~ span:before {border-color:#926a2d;}
+body.seoul-wrapper .label-form label > input[type="radio"]:checked ~ span:after {background:#926a2d;}
+body.seoul-wrapper .label-form label > input[type="checkbox"]:checked ~ span:before {background-color:#926a2d; border-color:#926a2d;}
+body.seoul-wrapper .bu-blue:before {background-color:#926a2d;}
+body.seoul-wrapper .btn-info {border-color:#e6a43f; background-color:#e6a43f; color:#fff !important;}
+body.seoul-wrapper .btn-lineBlue {border-color:#926a2d; color:#926a2d;}
+body.seoul-wrapper .btn-lineBlue:hover,
+body.seoul-wrapper .btn-lineBlue:focus {border-color:#e6a43f; background-color:#e6a43f; color:#fff;}
+body.seoul-wrapper .view-nav .order {color:#926a2d;}
+body.seoul-wrapper .ask-tit {color:#3056c5;}
+body.seoul-wrapper .tab-wrap .tab-type2 li.current,
+body.seoul-wrapper .tab-wrap .tab-type2 li.ui-state-active {border-top-color:#3a4147; border-left-color:#3a4147; border-right-color:#3a4147;}
+body.seoul-wrapper .tab-wrap .tab-type2 li.current a,
+body.seoul-wrapper .tab-wrap .tab-type2 li.ui-state-active a {color:#3a4147;}
+body.seoul-wrapper .tab-wrap .tab-type3 > li.current,
+body.seoul-wrapper .tab-wrap .tab-type3 > li.current {border-color:#926a2d;}
+body.seoul-wrapper .tab-wrap .tab-type3 > li.current > a:after,
+body.seoul-wrapper .tab-wrap .tab-type3 > li.current > a:after {background-color:#926a2d; background-image:none;}
+body.seoul-wrapper .tab-wrap .tab-type3 > li .depth02 li.current a {border-bottom-color:#926a2d; color:#926a2d;}
+body.seoul-wrapper .tab-wrap .tab-nav > li.current,
+body.seoul-wrapper .tab-wrap .tab-nav li.ui-state-active {border-color:#926a2d;}
+body.seoul-wrapper .tab-wrap .tab-nav > li.current > a,
+body.seoul-wrapper .tab-wrap .tab-nav li.ui-state-active > a {color:#c98d38;}
+body.seoul-wrapper .info-card {border-top-color:#926a2d; background-color:#fff;}
+body.seoul-wrapper .info-card .tit-box {color:#926a2d;}
+body.seoul-wrapper .info-card .btn {border:1px solid #926a2d; background-color:#926a2d;}
+body.seoul-wrapper .info-card.box-green {border-top-color:#f98540; background-color:#fff;}
+body.seoul-wrapper .info-card.box-green .tit-box {color:#f98540;}
+body.seoul-wrapper .info-card.box-green .btn {border:1px solid #f98540; background-color:#f98540;}
+body.seoul-wrapper .info-card.box-blue {border-top-color:#e6a43f; background-color:#fff;}
+body.seoul-wrapper .info-card.box-blue .tit-box {color:#e6a43f;}
+body.seoul-wrapper .info-card.box-blue .btn {border:1px solid #e6a43f; background-color:#e6a43f;}
+body.seoul-wrapper .medical-card dt .option {color:#00abad;}
+body.seoul-wrapper .medical-teamList .team-list li a:hover,
+body.seoul-wrapper .medical-teamList .team-list li a:focus {background:#e6a43f; color:#fff;}
+body.seoul-wrapper .num-gray {background-color:#929aab; color:#fff;}
+body.seoul-wrapper .list-thumb .item .hosp-name.hosp1 {color:#926a2d;}
+body.seoul-wrapper .initial ul li a:hover,
+body.seoul-wrapper .initial ul li a:focus {background:#926a2d; color:#fff;}
+body.seoul-wrapper .table-list {border-top-color:#9b9389;}
+body.seoul-wrapper .table-list th {background-color:#f1efec;}
+body.seoul-wrapper .initial ul li a:hover {background-color:#e6a43f;}
+body.seoul-wrapper .label-likeBtn:focus,
+body.seoul-wrapper .label-likeBtn:hover,
+body.seoul-wrapper .label-likeBtn.is-active {background-color:#e6a43f;}
+body.seoul-wrapper .srch-result-item .srch-resultTit {border-top-color:#9b9389; background-color:#f1efec;}
+body.seoul-wrapper .srch-result-item .srch-resultType2 > li > a .department,
+body.seoul-wrapper .srch-result-item .srch-resultType2.medical li a .part,
+body.seoul-wrapper .srch-result-item .see-more {color:#926a2d;}
+body.seoul-wrapper .srch-result-item .see-more:after {background-image:url('/seoul/images/common/icon_sprite.png');}
+body.seoul-wrapper .srch-result-item.type2 .srch-resultTit {border-top-color:#ce9a7b; background-color:#faf5ee;}
+body.seoul-wrapper .srch-result-item.type2 .see-more {color:#ef6e21;}
+body.seoul-wrapper .srch-result-item.type2 .see-more:after {background-position-x:-235px;}
+body.seoul-wrapper .tab-wrap .tab-type6 li.current,
+body.seoul-wrapper .tab-wrap .tab-type6 li.ui-state-active {border-top:2px solid #926a2d; border-left:2px solid #926a2d; border-right:2px solid #926a2d;}
+body.seoul-wrapper .tab-wrap .tab-type6 li.current a,
+body.seoul-wrapper .tab-wrap .tab-type6 li.ui-state-active a {color:#926a2d;}
+body.seoul-wrapper .list-thumb .item .hosp-name {color:#926a2d;}
+
+/* 병원별 색상변경 : layout */
+body.seoul-wrapper.eng .quick-link dd li a:before {background-color:#c59859;}
+body.seoul-wrapper.eng .quick-link dd li a:hover:before {background-color:#c37e1c;}
+body.seoul-wrapper.jpn .quick-link dd li a:before {background-color:#c59859;}
+body.seoul-wrapper.jpn .quick-link dd li a:hover:before {background-color:#c37e1c;}
+body.seoul-wrapper.chn .quick-link dd li a:before {background-color:#c59859;}
+body.seoul-wrapper.chn .quick-link dd li a:hover:before {background-color:#c37e1c;}
+body.seoul-wrapper .quick-link dd li a:focus,
+body.seoul-wrapper .quick-link dd li a:hover {color:#926a2d;}
+body.seoul-wrapper .center-banner .banner-slider .bx-pager .bx-pager-item a.active {background-color:#c59859;}
+body.seoul-wrapper #header .lnb li .depth01:hover,
+body.seoul-wrapper #header .lnb li .depth01:focus,
+body.seoul-wrapper #header .lnb li.current .depth01 {color:#c98d38;}
+body.seoul-wrapper #header .lnb li .depth01:after {background-color:#926a2d;}
+body.seoul-wrapper #header .lnb .depth02 .inner > ul > li.current > a,
+body.seoul-wrapper #header .lnb .depth02 .inner > ul > li > a:focus,
+body.seoul-wrapper #header .lnb .depth02 .inner > ul > li > a:hover {background-color:#926a2d; color:#fff;}
+body.seoul-wrapper #header .lnb-allMenuSec .lnb-body .depth02 > ul > li > a:hover,
+body.seoul-wrapper #header .lnb-allMenuSec .lnb-body .depth02 > ul > li > a:focus {color:#c98d38;}
+body.seoul-wrapper #header .lnb-allMenuSec .lnb-body .depth03 > li > a:hover,
+body.seoul-wrapper #header .lnb-allMenuSec .lnb-body .depth03 > li > a:focus {color:#c98d38;}
+body.seoul-wrapper .snb-wrap .snb > ul > li .depth1:hover,
+body.seoul-wrapper .snb-wrap .snb > ul > li .depth1:focus {color:#c98d38;}
+body.seoul-wrapper .snb-wrap .snb_depth2 > li.current a,
+body.seoul-wrapper .snb-wrap .snb_depth2 > li > a:hover,
+body.seoul-wrapper .snb-wrap .snb_depth2 > li > a:focus {color:#c98d38;}
+body.seoul-wrapper .snb-wrap .snb a:hover .depth1,
+body.seoul-wrapper .snb-wrap .snb a:focus .depth1,
+body.seoul-wrapper .snb-wrap .snb .current .depth1 {color:#c98d38;}
+
+/* 병원별 색상변경 : content */
+body.seoul-wrapper .news-ticker:before {border-color:#926a2d; color:#926a2d;}
+body.seoul-wrapper .visual-wrap .txt-area {background-color:#926a2d; color:#fff;}
+body.seoul-wrapper .visual-wrap.type3 .link-area {background-color:#926a2d;}
+body.seoul-wrapper .visual-wrap.type3 .link-area li a {color:#e5edff;}
+body.seoul-wrapper .press-box figcaption {background-color:#926a2d;}
+body.seoul-wrapper .link-box .tit {color:#fff;}
+body.seoul-wrapper .link-box .txt-go {color:#fff;}
+body.seoul-wrapper .link-box.naver-post .tit {color:#c9fffe;}
+body.seoul-wrapper .link-box.naver-post .tit strong {color:#fff;}
+body.seoul-wrapper .link-box.naver-post {background-color:#0ecac8;}
+body.seoul-wrapper .link-box.naver-post .txt-go {color:#fff;}
+body.seoul-wrapper .tit-snb {background:#926a2d; color:#fff;}
+body.seoul-wrapper .tit-line:before {background-color:#926a2d;}
+body.seoul-wrapper .tit-cont {color:#926a2d;}
+body.seoul-wrapper .intro-header:after {background-color:#926a2d;}
+body.seoul-wrapper .name-card {background-color:rgba(210,141,56,.85); color:#fff;}
+body.seoul-wrapper .editor-content h4:before {background-color:#926a2d;}
+body.seoul-wrapper .reserv-form .reserv-header h3 {color:#9fe2e0;}
+body.seoul-wrapper .reserv-form .reserv-body .select-part .part-wrap button:hover {background-color:#e6a43f; color:#fff;}
+body.seoul-wrapper .reserv-form .ui-datepicker-calendar tbody td .ui-state-active {background-color:#e6a43f; border-color:#e6a43f; color:#fff;}
+body.seoul-wrapper .reserv-time .reserv-timeBox li button.selected {background-color:#926a2d; color:#fff;}
+body.seoul-wrapper .popup {border-top-color:#926a2d;}
+body.seoul-wrapper .popup .txt-msg em {color:#926a2d;}
+body.seoul-wrapper .box-comb .tit-wrap span {color:#926a2d;}
+body.seoul-wrapper .doctor-list .info .name .option {background-color:#01b2b4;}
+body.seoul-wrapper .doctor-introduce .option {background-color:#01b2b4;}
+body.seoul-wrapper .equip-list li .equipItem {border-bottom-color:#926a2d;}
+body.seoul-wrapper .circle01 {background-color:#e6a43f;}
+body.seoul-wrapper .circle02 {background-color:#f59434;}
+body.seoul-wrapper .circle03 {background-color:#c98d38;}
+body.seoul-wrapper .circle04 {background-color:#ef6e21;}
+body.seoul-wrapper .department-list > ul > li.hover .tit {background-color:#926a2d;}
+body.seoul-wrapper .department-list > ul > li.hover .conts {background:#cb8142;}
+body.seoul-wrapper .department-list > ul > li .sub a:focus,
+body.seoul-wrapper .department-list > ul > li .sub a:hover {color:#fff77c;}
+body.seoul-wrapper .initial_list dl dd ul li a:hover {color:#926a2d;}
+body.seoul-wrapper .vision-wrap .vision strong {color:#ef6e21;}
+body.seoul-wrapper .vision-box .box-type {border-top-color:#e6a43f; background-color:#fff;}
+body.seoul-wrapper .vision-box .box-type:before {background-color:#e6a43f;}
+body.seoul-wrapper .vision-box .box-type .tit-box {color:#3056c5;}
+body.seoul-wrapper .director-list .history strong {background-color:#eceff5; color:#926a2d;}
+body.seoul-wrapper .director-list .history strong:before {background-color:#926a2d;}
+body.seoul-wrapper .year-box .year-list .year:before {background-color:#f98540;}
+body.seoul-wrapper .year-box .year-list .year {border-color:#e6a43f;}
+body.seoul-wrapper .tit-table {color:#9c6a2d;}
+body.seoul-wrapper .table-row {border-top-color:#9c6a2d;}
+body.seoul-wrapper .join-explain .txt p em {color:#00a2a4;}
+/* body.seoul-wrapper .issue-stepS li {background-color:#e6a43f;} */
+body.seoul-wrapper .issue-stepS li > span em {color:#ef6e21;}
+body.seoul-wrapper .medicine-list .medicine-explain .cate-blue {color:#926a2d;}
+body.seoul-wrapper .organization-wrap .director {background-color:#e6a43f; background-image:url(/seoul/images/intro/bg_director.png);}
+body.seoul-wrapper .organization-wrap .department {border-color:#ffd493; color:#e6a43f;}
+body.seoul-wrapper .organization-wrap .section-area dt {border-color:#01b2b4; background:#fff; color:#01b2b4;}
+body.seoul-wrapper .organization-wrap .section-area dt.assistant {background:#01b2b4; color:#fff;}
+body.seoul-wrapper .organization-wrap .room-area2 ul strong {background-color:#9297a5; color:#fff;}
+body.seoul-wrapper .numbe-blue dt {background-color:#926a2d; color:#fff;}
+body.seoul-wrapper .cs-list .compl {background-color:#01b2b4; color:#fff;}
+body.seoul-wrapper .praise-list .medicine-explain .praise-year {background-color:#01b2b4; color:#fff;}
+body.seoul-wrapper .praise-view .praise-year {background-color:#01b2b4; color:#fff;}
+body.seoul-wrapper .faq-list dt a.current em {background-color:#c98d38;}
+body.seoul-wrapper .faq-list dt a.current em:after {background-color:#c98d38;}
+body.seoul-wrapper .faq-list dt a.current span {color:#c98d38; font-weight:bold;}
+body.seoul-wrapper .faq-list dd em {background-color:#f98540; color:#fff;}
+body.seoul-wrapper .faq-list dd em:after {background-color:#f98540;}
+body.seoul-wrapper .disease-pdf .blue-sanggye {color:#926a2d;}
+body.seoul-wrapper .popup-popRights .popup-header .popup-title {color:#926a2d;}
+body.seoul-wrapper .user-info .user-name > strong {color:#926a2d;}
+body.seoul-wrapper .teaching-staff .box-tit {color:#fff; background-color:#926a2d;}
+body.seoul-wrapper .notice-board .notice-desc {color:#926a2d;}
+body.seoul-wrapper .notice-board.bg-white .notice-tit {color:#926a2d;}
+body.seoul-wrapper .keep-going .login-desc > strong {color:#926a2d;}
+body.seoul-wrapper .food-tit {color:#926a2d;}
+body.seoul-wrapper .page-history .cont-wrap .txt-wrap .year:before {border-color:#e6a43f;}
+body.seoul-wrapper .popup-findAddr .srch-result .srch-result-list > li dl .road {color:#926a2d;}
+body.seoul-wrapper .webzine-wrap .explain .tab-page2Inner {border-bottom-color:#926a2d;}
+body.seoul-wrapper .webzine-wrap .explain .bul-cir > li a:focus .des,
+body.seoul-wrapper .webzine-wrap .explain .bul-cir > li a:hover .des {color:#926a2d;}
+body.seoul-wrapper .webzine-wrap .explain .bul-cir > li a:hover:after {background-position:-334px -741px;}
+
+/* 다국어 */
+body.seoul-wrapper .greeting-header:after {background-color:#926a2d;}
+body.seoul-wrapper .name {color:#926a2d;}
+body.seoul-wrapper .vision-box .box-type {border-top-color:#e68e3f;}
+body.seoul-wrapper .vision-box .box-type:before {background-color:#e68e3f;}
+body.seoul-wrapper .vision-box .box-type .tit-box {color:#e68e3f;}
+body.seoul-wrapper .page-history .cont-wrap .txt-wrap .year:after {background-color:#f98541;}
+body.seoul-wrapper .rectangle-step li {background:#e6a43f;}
+body.seoul-wrapper .rectangle-step li > span em {color:#ef6e21;}
+body.seoul-wrapper #header .lnb .depth02 .inner > ul > li > a:hover,
+body.seoul-wrapper #header .lnb .depth02 .inner > ul > li > a:focus,
+body.seoul-wrapper #header .lnb .depth02 .inner > ul > li.current > a {color:#926a2d !important; background:none !important;}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+	일산백병원 색상 변경
+------------------------------------------------------------------------------------------------------------------------------------------*/
+/* 병원별 색상변경 : ui-style */
+body.ilsan-wrapper .srch-part .input-srch {border-color:#606e79;}
+body.ilsan-wrapper .label-form label > input:checked ~ span {color:#3a414f;}
+body.ilsan-wrapper .label-form label > input:checked ~ span:before {border-color:#00a6e6;}
+body.ilsan-wrapper .label-form label > input[type="radio"]:checked ~ span:after {background:#00a6e6;}
+body.ilsan-wrapper .label-form label > input[type="checkbox"]:checked ~ span:before {background-color:#00a6e6; border-color:#00a6e6;}
+body.ilsan-wrapper .bu-blue:before {background-color:#00a6e6;}
+body.ilsan-wrapper .btn-info {border-color:#00a6e6; background-color:#00a6e6; color:#fff !important;}
+body.ilsan-wrapper .info-card {border-top-color:#00a6e6; background-color:#fff;}
+body.ilsan-wrapper .info-card .tit-box {border-bottom-color:#d2d2d2; color:#00a6e6;}
+body.ilsan-wrapper .info-card.box-blue {border-top-color:#2b75d1;}
+body.ilsan-wrapper .info-card.box-blue .btn {border:1px solid #2b75d1; background-color:#2b75d1;}
+body.ilsan-wrapper .info-card.box-blue .tit-box {border-bottom-color:#d2d2d2; color:#2b75d1;}
+body.ilsan-wrapper .info-card.box-green {border-top-color:#01b2b4;}
+body.ilsan-wrapper .info-card.box-green .btn {border:1px solid #01b2b4; background-color:#01b2b4;}
+body.ilsan-wrapper .info-card.box-green .tit-box {border-bottom-color:#d2d2d2; color:#01b2b4;}
+body.ilsan-wrapper .btn-lineBlue {border-color:#00a6e6; color:#00a6e6;}
+body.ilsan-wrapper .btn-lineBlue:hover,
+body.ilsan-wrapper .btn-lineBlue:focus {border-color:#00a6e6; background-color:#00a6e6; color:#fff;}
+body.ilsan-wrapper .view-nav .order {color:#00a6e6;}
+body.ilsan-wrapper .board-list td .link2:hover,
+body.ilsan-wrapper .board-list td .link2:focus {color:#00a6e6;}
+body.ilsan-wrapper .board-list .file:after {background-color:#33bbbd;}
+body.ilsan-wrapper .board-viewWrap3 .file:before {background-color:#33bbbd;}
+body.ilsan-wrapper .ask-tit {color:#3056c5;}
+body.ilsan-wrapper .table-list th {background-color:#f1f3f8; border-color:#dcdcdc;}
+body.ilsan-wrapper .table-list td {border-color:#dcdcdc;}
+body.ilsan-wrapper .table-list td .link2:hover,
+body.ilsan-wrapper .table-list td .link2:focus {color:#00a6e6;}
+body.ilsan-wrapper .tab-wrap .tab-nav > li.current,
+body.ilsan-wrapper .tab-wrap .tab-nav li.ui-state-active {border-color:#00a6e6;}
+body.ilsan-wrapper .tab-wrap .tab-nav > li.current > a,
+body.ilsan-wrapper .tab-wrap .tab-nav li.ui-state-active > a {background-color:#fff; color:#00a6e6;}
+body.ilsan-wrapper .tab-wrap .tab-nav > li.current > a:after,
+body.ilsan-wrapper .tab-wrap .tab-nav li.ui-state-active > a:after {background:url(/ilsan/images/common/icon_sprite.png) no-repeat -100px -55px;}
+body.ilsan-wrapper .tab-wrap .tab-type2 li.current,
+body.ilsan-wrapper .tab-wrap .tab-type2 li.ui-state-active {border-top-color:#3a4147; border-left-color:#3a4147; border-right-color:#3a4147;}
+body.ilsan-wrapper .tab-wrap .tab-type2 li.current a,
+body.ilsan-wrapper .tab-wrap .tab-type2 li.ui-state-active a {color:#3a4147;}
+body.ilsan-wrapper .tab-wrap .tab-type3 > li.current,
+body.ilsan-wrapper .tab-wrap .tab-type3 > li.current {border-color:#00a6e6;}
+body.ilsan-wrapper .tab-wrap .tab-type3 > li.current > a:after,
+body.ilsan-wrapper .tab-wrap .tab-type3 > li.current > a:after {background-color:#00a6e6; background-image:none;}
+body.ilsan-wrapper .tab-wrap .tab-type3 > li .depth02 li.current a {border-bottom-color:#00a6e6; color:#00a6e6;}
+body.ilsan-wrapper .medical-card.selected:after {background:url(/ilsan/images/common/icon_sprite.png) no-repeat -238px 0;}
+body.ilsan-wrapper .medical-card dt .option {color:#00abad;}
+body.ilsan-wrapper .medical-teamList .team-list li a:hover,
+body.ilsan-wrapper .medical-teamList .team-list li a:focus {background:#00a6e6; color:#fff;}
+body.ilsan-wrapper .num-gray {background-color:#929aab; color:#fff;}
+body.ilsan-wrapper .list-thumb .item .hosp-name.hosp1 {color:#00a6e6;}
+body.ilsan-wrapper .initial ul li a:hover,
+body.ilsan-wrapper .initial ul li a:focus {background:#00a6e6; color:#fff;}
+body.ilsan-wrapper .label-likeBtn:focus,
+body.ilsan-wrapper .label-likeBtn:hover,
+body.ilsan-wrapper .label-likeBtn.is-active {background-color:#00a6e6;}
+body.ilsan-wrapper .srch-result-item .srch-resultTit {border-top-color:#00a6e6; background-color:#f1f5f8;}
+body.ilsan-wrapper .srch-result-item .srch-resultType2 > li > a .department,
+body.ilsan-wrapper .srch-result-item .srch-resultType2.medical li a .part,
+body.ilsan-wrapper .srch-result-item .see-more {color:#00a6e6;}
+body.ilsan-wrapper .srch-result-item .see-more:after {background-image:url('/ilsan/images/common/icon_sprite.png');}
+body.ilsan-wrapper .srch-result-item.type2 .srch-resultTit {border-top-color:#74d8d9;}
+body.ilsan-wrapper .srch-result-item.type2 .see-more {color:#01b2b4;}
+body.ilsan-wrapper .srch-result-item.type2 .see-more:after {background-position-x:-235px;}
+body.ilsan-wrapper .tab-wrap .tab-type6 li.current,
+body.ilsan-wrapper .tab-wrap .tab-type6 li.ui-state-active {border-top:2px solid #00a6e6; border-left:2px solid #00a6e6; border-right:2px solid #00a6e6;}
+body.ilsan-wrapper .tab-wrap .tab-type6 li.current a,
+body.ilsan-wrapper .tab-wrap .tab-type6 li.ui-state-active a {color:#00a6e6;}
+body.ilsan-wrapper .webzine-wrap .explain .tab-page2Inner {border-bottom-color:#00a6e6;}
+body.ilsan-wrapper .list-thumb .item .hosp-name {color:#00a6e6;}
+
+/* 병원별 색상변경 : layout */
+body.ilsan-wrapper #header .lnb li .depth01:hover,
+body.ilsan-wrapper #header .lnb li .depth01:focus {color:#00a6e6;}
+body.ilsan-wrapper #header .lnb li .depth01:after {background-color:#00a6e6;}
+body.ilsan-wrapper #header .lnb .depth02 .inner > ul > li.current > a,
+body.ilsan-wrapper #header .lnb .depth02 .inner > ul > li > a:focus,
+body.ilsan-wrapper #header .lnb .depth02 .inner > ul > li > a:hover {background-color:#00a6e6; color:#fff;}
+body.ilsan-wrapper #header .lnb-allMenuSec .lnb-body .depth02 > ul > li > a:hover,
+body.ilsan-wrapper #header .lnb-allMenuSec .lnb-body .depth02 > ul > li > a:focus {color:#00a6e6;}
+body.ilsan-wrapper #header .lnb-allMenuSec .lnb-body .depth03 > li > a:hover,
+body.ilsan-wrapper #header .lnb-allMenuSec .lnb-body .depth03 > li > a:focus {color:#00a6e6;}
+body.ilsan-wrapper .snb-wrap .snb > ul > li .depth1:hover,
+body.ilsan-wrapper .snb-wrap .snb > ul > li .depth1:focus {color:#00a6e6;}
+body.ilsan-wrapper .snb-wrap .snb_depth2 > li.current a,
+body.ilsan-wrapper .snb-wrap .snb_depth2 > li > a:hover,
+body.ilsan-wrapper .snb-wrap .snb_depth2 > li > a:focus {color:#00a6e6;}
+body.ilsan-wrapper .snb-wrap .snb .current .depth1 {color:#00a6e6;}
+
+/* 병원별 색상변경 : content */
+body.ilsan-wrapper .quick-link dd li a:focus,
+body.ilsan-wrapper .quick-link dd li a:hover {color:#00a6e6;}
+body.ilsan-wrapper .news-ticker:before {border-color:#00a6e6; color:#00a6e6;}
+body.ilsan-wrapper .visual-wrap .txt-area {background-color:#00a6e6; color:#fff;}
+body.ilsan-wrapper .visual-wrap.type3 .link-area {background-color:#00a6e6;}
+body.ilsan-wrapper .visual-wrap.type3 .link-area li a {color:#e5edff;}
+body.ilsan-wrapper .press-box figcaption {background-color:#00a6e6;}
+body.ilsan-wrapper .link-box .tit {color:#00959e;}
+body.ilsan-wrapper .link-box .txt-go {color:#2aa4ac;}
+body.ilsan-wrapper .link-box.naver-post .tit {color:#c9fffe;}
+body.ilsan-wrapper .link-box.naver-post .tit strong {color:#fff;}
+body.ilsan-wrapper .link-box.naver-post {background-color:#0ecac8;}
+body.ilsan-wrapper .link-box.naver-post .txt-go {color:#fff;}
+body.ilsan-wrapper .tit-snb {background:#00a6e6; color:#fff;}
+body.ilsan-wrapper .tit-line:before {background-color:#00a6e6;}
+body.ilsan-wrapper .tit-cont {color:#00a6e6;}
+body.ilsan-wrapper .intro-header:after {background-color:#00a6e6;}
+body.ilsan-wrapper .name-card {background-color:#00a6e6; color:#fff;}
+body.ilsan-wrapper .editor-content h4:before {background-color:#00a6e6;}
+body.ilsan-wrapper .reserv-form .reserv-header h3 {color:#9fe2e0;}
+body.ilsan-wrapper .reserv-form .reserv-body .select-part .part-wrap button:hover {background-color:#00a6e6; color:#fff;}
+body.ilsan-wrapper .reserv-form .ui-datepicker-calendar tbody td .ui-state-active {background-color:#00a6e6; border-color:#00a6e6; color:#fff;}
+body.ilsan-wrapper .reserv-time .reserv-timeBox li button.selected {background-color:#00a6e6; color:#fff;}
+body.ilsan-wrapper .popup {border-top-color:#00a6e6;}
+body.ilsan-wrapper .popup .txt-msg em {color:#00a6e6;}
+body.ilsan-wrapper .box-comb .tit-wrap span {color:#00a6e6;}
+body.ilsan-wrapper .doctor-list .info .name .option {background-color:#01b2b4;}
+body.ilsan-wrapper .doctor-introduce .option {background-color:#01b2b4;}
+body.ilsan-wrapper .circle01 {background-color:#5a93d9;}
+body.ilsan-wrapper .circle02 {background-color:#2da5d7;}
+body.ilsan-wrapper .circle03 {background-color:#01b2b4;}
+body.ilsan-wrapper .circle04 {background-color:#2b75d1;}
+/* body.ilsan-wrapper .circle05 {background-color:#00a6e6;} */
+body.ilsan-wrapper .circle01 b {color:#acd1ff;}
+body.ilsan-wrapper .circle02 b {color:#8cddff;}
+body.ilsan-wrapper .circle03 b {color:#8aecf5;}
+body.ilsan-wrapper .circle04 b {color:#96bff3;}
+body.ilsan-wrapper .circle05 b {color:#94affe;}
+body.ilsan-wrapper .department-list > ul > li.hover .tit {background-color:#00a6e6;}
+body.ilsan-wrapper .department-list > ul > li.hover .conts {background:#90d4ff;}
+body.ilsan-wrapper .department-list > ul > li .sub a:focus,
+body.ilsan-wrapper .department-list > ul > li .sub a:hover {color:#2b4ae6;}
+body.ilsan-wrapper .initial_list dl dd ul li a:hover {color:#00a6e6;}
+body.ilsan-wrapper .vision-wrap .vision strong {color:#00a6e6;}
+body.ilsan-wrapper .vision-box .box-type {border-top-color:#00a6e6; background-color:#fff;}
+body.ilsan-wrapper .vision-box .box-type:before {background-color:#00a6e6;}
+body.ilsan-wrapper .vision-box .box-type .tit-box {color:#3056c5;}
+body.ilsan-wrapper .director-list .history strong {background-color:#eceff5; color:#00a6e6;}
+body.ilsan-wrapper .director-list .history strong:before {background-color:#00a6e6;}
+body.ilsan-wrapper .year-box .year-list .year:before {background-color:#01b2b4;}
+body.ilsan-wrapper .year-box .year-list .year {border-color:#6483df;}
+body.ilsan-wrapper .tit-table {color:#00a6e6;}
+body.ilsan-wrapper .table-row {border-top-color:#00a6e6;}
+body.ilsan-wrapper .join-explain .txt p em {color:#00a2a4;}
+body.ilsan-wrapper .issue-stepS li {background-color:#00a6e6;}
+/* body.ilsan-wrapper .issue-stepS li > span em {color:#00a6e6;} */
+body.ilsan-wrapper .circle-green li {background-color:#01b2b4;}
+body.ilsan-wrapper .circle-green li > span em {color:#01b2b4;}
+body.ilsan-wrapper .medicine-list .medicine-explain .cate-blue {color:#00a6e6;}
+body.ilsan-wrapper .organization-wrap .director {background-color:#00a6e6;}
+body.ilsan-wrapper .organization-wrap .department {border-color:#6abedf; color:#6abedf;}
+body.ilsan-wrapper .organization-wrap .section-area dt {border-color:#01b2b4; background:#fff; color:#01b2b4;}
+body.ilsan-wrapper .organization-wrap .section-area dt.assistant {background:#01b2b4; color:#fff;}
+body.ilsan-wrapper .organization-wrap .room-area2 ul strong {background-color:#9297a5; color:#fff;}
+body.ilsan-wrapper .numbe-blue dt {background-color:#00a6e6; color:#fff;}
+body.ilsan-wrapper .cs-list .compl {background-color:#01b2b4; color:#fff;}
+body.ilsan-wrapper .praise-list .medicine-explain .praise-year {background-color:#01b2b4; color:#fff;}
+body.ilsan-wrapper .praise-view .praise-year {background-color:#01b2b4; color:#fff;}
+body.ilsan-wrapper .faq-list dt a.current em {background-color:#01b2b4;}
+body.ilsan-wrapper .faq-list dt a.current span {color:#01b2b4;}
+body.ilsan-wrapper .faq-list dd em {background-color:#00a6e6; color:#fff;}
+body.ilsan-wrapper .faq-list dd em:after {background-color:#00a6e6;}
+body.ilsan-wrapper .disease-pdf .blue-sanggye {color:#00a6e6;}
+body.ilsan-wrapper .popup-popRights .popup-header .popup-title {color:#00a6e6;}
+body.ilsan-wrapper .user-info .user-name > strong {color:#00a6e6;}
+body.ilsan-wrapper .teaching-staff .box-tit {color:#fff; background-color:#00a6e6;}
+body.ilsan-wrapper .notice-board .notice-desc {color:#00a6e6;}
+body.ilsan-wrapper .notice-board.bg-white .notice-tit {color:#00a6e6;}
+body.ilsan-wrapper .keep-going .login-desc > strong {color:#00a6e6;}
+body.ilsan-wrapper .food-tit {color:#00a6e6;}
+body.ilsan-wrapper .popup-findAddr .srch-result .srch-result-list > li dl .road {color:#00a6e6;}
+body.ilsan-wrapper .webzine-wrap .explain .bul-cir > li a:focus .des,
+body.ilsan-wrapper .webzine-wrap .explain .bul-cir > li a:hover .des {color:#00a6e6;}
+body.ilsan-wrapper .webzine-wrap .explain .bul-cir > li a:hover:after {background-position:-314px -741px;}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+	부산백병원 색상 변경
+------------------------------------------------------------------------------------------------------------------------------------------*/
+/* 병원별 색상변경 : ui-style */
+body.busan-wrapper.rus .quick-link dd li a:before {background-color:#30c9c7;}
+body.busan-wrapper.rus .quick-link dd li a:hover:before {background-color:#13a9a7;}
+body.busan-wrapper .srch-part .input-srch {border-color:#606e79;}
+body.busan-wrapper .label-form label > input:checked ~ span {color:#3a414f;}
+body.busan-wrapper .label-form label > input:checked ~ span:before {border-color:#13a9a7;}
+body.busan-wrapper .label-form label > input[type="radio"]:checked ~ span:after {background:#13a9a7;}
+body.busan-wrapper .label-form label > input[type="checkbox"]:checked ~ span:before {background-color:#13a9a7; border-color:#13a9a7;}
+body.busan-wrapper .bu-blue:before {background-color:#13a9a7;}
+body.busan-wrapper .btn-info {border-color:#13a9a7; background-color:#13a9a7; color:#fff !important;}
+body.busan-wrapper .info-card {border-top-color:#2b75d1; background-color:#fff;}
+body.busan-wrapper .info-card .tit-box {border-bottom-color:#d2d2d2; color:#2b75d1;}
+body.busan-wrapper .info-card.box-blue .btn {border:1px solid #2b75d1; background-color:#2b75d1;}
+body.busan-wrapper .info-card.box-green {border-top-color:#13a9a7; background-color:#fff;}
+body.busan-wrapper .info-card.box-green .tit-box {border-bottom-color:#d2d2d2; color:#13a9a7;}
+body.busan-wrapper .info-card.box-green .btn {border:1px solid #13a9a7; background-color:#13a9a7;}
+body.busan-wrapper .btn-lineBlue {border-color:#13a9a7; color:#13a9a7;}
+body.busan-wrapper .btn-lineBlue:hover,
+body.busan-wrapper .btn-lineBlue:focus {border-color:#13a9a7; background-color:#13a9a7; color:#fff;}
+body.busan-wrapper .view-nav .order {color:#13a9a7;}
+body.busan-wrapper .board-list td .link2:hover,
+body.busan-wrapper .board-list td .link2:focus {color:#13a9a7;}
+body.busan-wrapper .board-list .file:after {background-color:#33bbbd;}
+body.busan-wrapper .board-viewWrap3 .file:before {background-color:#33bbbd;}
+body.busan-wrapper .ask-tit {color:#3056c5;}
+/* body.busan-wrapper .table-list {border-color:#7e97e0;}
+body.busan-wrapper .table-list th {background-color:#f1f3f8; border-color:#dcdcdc;}
+body.busan-wrapper .table-list td {border-color:#dcdcdc;}
+body.busan-wrapper .table-list td .link2:hover,
+body.busan-wrapper .table-list td .link2:focus {color:#13a9a7;} */
+body.busan-wrapper .tab-wrap .tab-nav > li.current,
+body.busan-wrapper .tab-wrap .tab-nav li.ui-state-active {border-color:#13a9a7;}
+body.busan-wrapper .tab-wrap .tab-nav > li.current > a,
+body.busan-wrapper .tab-wrap .tab-nav li.ui-state-active > a {background-color:#fff; color:#13a9a7;}
+body.busan-wrapper .tab-wrap .tab-type2 li.current,
+body.busan-wrapper .tab-wrap .tab-type2 li.ui-state-active {border-top-color:#3a4147; border-left-color:#3a4147; border-right-color:#3a4147;}
+body.busan-wrapper .tab-wrap .tab-type2 li.current a,
+body.busan-wrapper .tab-wrap .tab-type2 li.ui-state-active a {color:#3a4147;}
+body.busan-wrapper .tab-wrap .tab-type3 > li.current,
+body.busan-wrapper .tab-wrap .tab-type3 > li.current {border-color:#13a9a7;}
+body.busan-wrapper .tab-wrap .tab-type3 > li.current > a:after,
+body.busan-wrapper .tab-wrap .tab-type3 > li.current > a:after {background-color:#13a9a7; background-image:none;}
+body.busan-wrapper .tab-wrap .tab-type3 > li .depth02 li.current a {border-bottom-color:#13a9a7; color:#13a9a7;}
+body.busan-wrapper .medical-card dt .option {color:#00abad;}
+body.busan-wrapper .medical-teamList .team-list li a:hover,
+body.busan-wrapper .medical-teamList .team-list li a:focus {background:#13a9a7; color:#fff;}
+body.busan-wrapper .num-gray {background-color:#929aab; color:#fff;}
+body.busan-wrapper .list-thumb .item .hosp-name.hosp1 {color:#13a9a7;}
+body.busan-wrapper .initial ul li a:hover,
+body.busan-wrapper .initial ul li a:focus {background:#13a9a7; color:#fff;}
+body.busan-wrapper .label-likeBtn:focus,
+body.busan-wrapper .label-likeBtn:hover,
+body.busan-wrapper .label-likeBtn.is-active {background-color:#13a9a7;}
+body.busan-wrapper .srch-result-item .srch-resultTit {border-top-color:#13a9a7; background-color:#edf5f5;}
+body.busan-wrapper .srch-result-item .srch-resultType2 > li > a .department,
+body.busan-wrapper .srch-result-item .srch-resultType2.medical li a .part,
+body.busan-wrapper .srch-result-item .see-more {color:#13a9a7;}
+body.busan-wrapper .srch-result-item .see-more:after {background-image:url('/busan/images/common/icon_sprite.png');}
+body.busan-wrapper .srch-result-item.type2 .srch-resultTit {border-top-color:#2b75d1; background-color:#eef4fb;}
+body.busan-wrapper .srch-result-item.type2 .see-more {color:#2b75d1;}
+body.busan-wrapper .srch-result-item.type2 .see-more:after {background-position-x:-235px;}
+body.busan-wrapper .tab-wrap .tab-type6 li.current,
+body.busan-wrapper .tab-wrap .tab-type6 li.ui-state-active {border-top:2px solid #13a9a7; border-left:2px solid #13a9a7; border-right:2px solid #13a9a7;}
+body.busan-wrapper .tab-wrap .tab-type6 li.current a,
+body.busan-wrapper .tab-wrap .tab-type6 li.ui-state-active a {color:#13a9a7;}
+body.busan-wrapper .list-thumb .item .hosp-name {color:#01b2b4;}
+
+/* 병원별 색상변경 : layout */
+body.busan-wrapper #header .lnb li .depth01:hover,
+body.busan-wrapper #header .lnb li .depth01:focus {color:#13a9a7;}
+body.busan-wrapper #header .lnb li .depth01:after {background-color:#13a9a7;}
+body.busan-wrapper #header .lnb .depth02 .inner > ul > li.current > a,
+body.busan-wrapper #header .lnb .depth02 .inner > ul > li > a:focus,
+body.busan-wrapper #header .lnb .depth02 .inner > ul > li > a:hover {background-color:#13a9a7; color:#fff;}
+body.busan-wrapper #header .lnb-allMenuSec .lnb-body .depth02 > ul > li > a:hover,
+body.busan-wrapper #header .lnb-allMenuSec .lnb-body .depth02 > ul > li > a:focus {color:#13a9a7;}
+body.busan-wrapper #header .lnb-allMenuSec .lnb-body .depth03 > li > a:hover,
+body.busan-wrapper #header .lnb-allMenuSec .lnb-body .depth03 > li > a:focus {color:#13a9a7;}
+body.busan-wrapper .snb-wrap .snb > ul > li .depth1:hover,
+body.busan-wrapper .snb-wrap .snb > ul > li .depth1:focus {color:#13a9a7;}
+body.busan-wrapper .snb-wrap .snb_depth2 > li.current a,
+body.busan-wrapper .snb-wrap .snb_depth2 > li > a:hover,
+body.busan-wrapper .snb-wrap .snb_depth2 > li > a:focus {color:#13a9a7;}
+body.busan-wrapper .snb-wrap .snb .current .depth1 {color:#13a9a7;}
+body.busan-wrapper .center-banner .banner-slider .bx-pager .bx-pager-item a.active {background-color:#13a9a7;}
+
+/* 병원별 색상변경 : content */
+body.busan-wrapper .news-ticker:before {border-color:#13a9a7; color:#13a9a7;}
+body.busan-wrapper .visual-wrap .txt-area {background-color:#13a9a7; color:#fff;}
+body.busan-wrapper .visual-wrap.type3 .link-area {background-color:#13a9a7;}
+body.busan-wrapper .visual-wrap.type3 .link-area li a {color:#e5edff;}
+body.busan-wrapper .press-box figcaption {background-color:#13a9a7;}
+/*body.busan-wrapper .link-box .tit {color:#00959e;}
+body.busan-wrapper .link-box .txt-go {color:#2aa4ac;}*/
+body.busan-wrapper .link-box.naver-post .tit {color:#c9fffe;}
+body.busan-wrapper .link-box.naver-post .tit strong {color:#fff;}
+body.busan-wrapper .link-box.naver-post {background-color:#0ecac8;}
+body.busan-wrapper .link-box.naver-post .txt-go {color:#fff;}
+body.busan-wrapper .tit-snb {background:#13a9a7; color:#fff;}
+body.busan-wrapper .tit-line:before {background-color:#13a9a7;}
+body.busan-wrapper .tit-cont {color:#13a9a7;}
+body.busan-wrapper .intro-header:after {background-color:#13a9a7;}
+body.busan-wrapper .name-card {background-color:#13a9a7; color:#fff;}
+body.busan-wrapper .editor-content h4:before {background-color:#13a9a7;}
+body.busan-wrapper .reserv-form .reserv-header h3 {color:#9fe2e0;}
+body.busan-wrapper .reserv-form .reserv-body .select-part .part-wrap button:hover {background-color:#13a9a7; color:#fff;}
+body.busan-wrapper .reserv-form .ui-datepicker-calendar tbody td .ui-state-active {background-color:#13a9a7; border-color:#13a9a7; color:#fff;}
+body.busan-wrapper .reserv-time .reserv-timeBox li button.selected {background-color:#13a9a7; color:#fff;}
+body.busan-wrapper .popup {border-top-color:#13a9a7;}
+body.busan-wrapper .popup .txt-msg em {color:#13a9a7;}
+body.busan-wrapper .box-comb .tit-wrap span {color:#13a9a7;}
+body.busan-wrapper .doctor-list .info .name .option {background-color:#01b2b4;}
+body.busan-wrapper .doctor-introduce .option {background-color:#01b2b4;}
+body.busan-wrapper .department-list > ul > li.hover .tit {background-color:#13a9a7;}
+body.busan-wrapper .department-list > ul > li.hover .conts {background:#30c9c7;}
+body.busan-wrapper .department-list > ul > li .sub a:focus,
+body.busan-wrapper .department-list > ul > li .sub a:hover {color:#00f6ff;}
+body.busan-wrapper .initial_list dl dd ul li a:hover {color:#13a9a7;}
+body.busan-wrapper .vision-wrap .vision strong {color:#13a9a7;}
+body.busan-wrapper .vision-box .box-type {border-top-color:#13a9a7; background-color:#fff;}
+body.busan-wrapper .vision-box .box-type:before {background-color:#13a9a7;}
+body.busan-wrapper .vision-box .box-type .tit-box {color:#13a9a7;}
+body.busan-wrapper .director-list .history strong {background-color:#eceff5; color:#13a9a7;}
+body.busan-wrapper .director-list .history strong:before {background-color:#13a9a7;}
+body.busan-wrapper .year-box .year-list .year:before {background-color:#6483df;}
+body.busan-wrapper .year-box .year-list .year {border-color:#01b2b4;}
+body.busan-wrapper .tit-table {color:#13a9a7;}
+body.busan-wrapper .table-row {border-top-color:#13a9a7;}
+body.busan-wrapper .join-explain .txt p em {color:#00a2a4;}
+body.busan-wrapper .medicine-list .medicine-explain .cate-blue {color:#13a9a7;}
+body.busan-wrapper .organization-wrap .director {background-color:#6483df;}
+body.busan-wrapper .organization-wrap .department {border-color:#b8c6ee; color:#7288c5;}
+body.busan-wrapper .organization-wrap .section-area dt {border-color:#01b2b4; background:#fff; color:#01b2b4;}
+body.busan-wrapper .organization-wrap .section-area dt.assistant {background:#01b2b4; color:#fff;}
+body.busan-wrapper .organization-wrap .room-area2 ul strong {background-color:#9297a5; color:#fff;}
+body.busan-wrapper .numbe-blue dt {background-color:#13a9a7; color:#fff;}
+body.busan-wrapper .cs-list .compl {background-color:#5a92d8; color:#fff;}
+body.busan-wrapper .praise-list .medicine-explain .praise-year {background-color:#01b2b4; color:#fff;}
+body.busan-wrapper .praise-view .praise-year {background-color:#01b2b4; color:#fff;}
+body.busan-wrapper .faq-list dt a.current em {background-color:#01b2b4;}
+body.busan-wrapper .faq-list dt a.current span {color:#01b2b4;}
+body.busan-wrapper .faq-list dd em {background-color:#13a9a7; color:#fff;}
+body.busan-wrapper .faq-list dd em:after {background-color:#13a9a7;}
+body.busan-wrapper .disease-pdf .blue-sanggye {color:#13a9a7;}
+body.busan-wrapper .popup-popRights .popup-header .popup-title {color:#13a9a7;}
+body.busan-wrapper .user-info .user-name > strong {color:#13a9a7;}
+body.busan-wrapper .teaching-staff .box-tit {color:#fff; background-color:#13a9a7;}
+body.busan-wrapper .notice-board .notice-desc {color:#13a9a7;}
+body.busan-wrapper .notice-board.bg-white .notice-tit {color:#13a9a7;}
+body.busan-wrapper .keep-going .login-desc > strong {color:#13a9a7;}
+body.busan-wrapper .food-tit {color:#13a9a7;}
+body.busan-wrapper .popup-findAddr .srch-result .srch-result-list > li dl .road {color:#13a9a7;}
+body.busan-wrapper .webzine-wrap .explain .tab-page2Inner {border-bottom-color:#13a9a7;}
+body.busan-wrapper .webzine-wrap .explain .bul-cir > li a:focus .des,
+body.busan-wrapper .webzine-wrap .explain .bul-cir > li a:hover .des {color:#13a9a7;}
+body.busan-wrapper .webzine-wrap .explain .bul-cir > li a:hover:after {background-position:-354px -741px;}
+
+/* 다국어 */
+body.busan-wrapper .rectangle-step li {background:#01b2b4;}
+body.busan-wrapper .rectangle-step li > span em {color:#01b2b4;}
+body.busan-wrapper #header .lnb .depth02 .inner > ul > li > a:hover,
+body.busan-wrapper #header .lnb .depth02 .inner > ul > li > a:focus,
+body.busan-wrapper #header .lnb .depth02 .inner > ul > li.current > a {color:#13a9a7 !important; background:none !important;}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------
+	해운대백병원 색상 변경
+------------------------------------------------------------------------------------------------------------------------------------------*/
+/* 병원별 색상변경 : ui-style */
+body.haeundae-wrapper.eng .quick-link dd li a:before {background-color:#8a84c9;}
+body.haeundae-wrapper.eng .quick-link dd li a:hover:before {background-color:#6861ae;}
+body.haeundae-wrapper.jpn .quick-link dd li a:before {background-color:#8a84c9;}
+body.haeundae-wrapper.jpn .quick-link dd li a:hover:before {background-color:#6861ae;}
+body.haeundae-wrapper.chn .quick-link dd li a:before {background-color:#8a84c9;}
+body.haeundae-wrapper.chn .quick-link dd li a:hover:before {background-color:#6861ae;}
+body.haeundae-wrapper.rus .quick-link dd li a:before {background-color:#8a84c9;}
+body.haeundae-wrapper.rus .quick-link dd li a:hover:before {background-color:#6861ae;}
+body.haeundae-wrapper .srch-part .input-srch {border-color:#606e79;}
+body.haeundae-wrapper .label-form label > input:checked ~ span {color:#3a414f;}
+body.haeundae-wrapper .label-form label > input:checked ~ span:before {border-color:#6861ae;}
+body.haeundae-wrapper .label-form label > input[type="radio"]:checked ~ span:after {background:#6861ae;}
+body.haeundae-wrapper .label-form label > input[type="checkbox"]:checked ~ span:before {background-color:#6861ae; border-color:#6861ae;}
+body.haeundae-wrapper .bu-blue:before {background-color:#6861ae;}
+body.haeundae-wrapper .btn-info {border-color:#6861ae; background-color:#6861ae; color:#fff !important;}
+body.haeundae-wrapper .btn-gray3 {background-color:#717684;}
+body.haeundae-wrapper .info-card.box-blue .btn {border:1px solid #4b6fd8; background-color:#4b6fd8;}
+body.haeundae-wrapper .info-card.box-green .btn {border:1px solid #6861ae; background-color:#6861ae;}
+body.haeundae-wrapper .btn-lineBlue {border-color:#6861ae; color:#6861ae;}
+body.haeundae-wrapper .btn-lineBlue:hover,
+body.haeundae-wrapper .btn-lineBlue:focus {border-color:#6861ae; background-color:#6861ae; color:#fff;}
+body.haeundae-wrapper .view-nav .order {color:#6861ae;}
+body.haeundae-wrapper .board-list td .link2:hover,
+body.haeundae-wrapper .board-list td .link2:focus {color:#6861ae;}
+body.haeundae-wrapper .board-list .file:after {background-color:#33bbbd;}
+body.haeundae-wrapper .board-viewWrap3 .file:before {background-color:#33bbbd;}
+body.haeundae-wrapper .ask-tit {color:#3056c5;}
+/* body.haeundae-wrapper .table-list {border-color:#7e97e0;}
+body.haeundae-wrapper .table-list th {background-color:#f1f3f8; border-color:#dcdcdc;}
+body.haeundae-wrapper .table-list td {border-color:#dcdcdc;}
+body.haeundae-wrapper .table-list td .link2:hover,
+body.haeundae-wrapper .table-list td .link2:focus {color:#6861ae;} */
+body.haeundae-wrapper .tab-wrap .tab-nav > li.current,
+body.haeundae-wrapper .tab-wrap .tab-nav li.ui-state-active {border-color:#6861ae;}
+body.haeundae-wrapper .tab-wrap .tab-nav > li.current > a,
+body.haeundae-wrapper .tab-wrap .tab-nav li.ui-state-active > a {background-color:#fff; color:#6861ae;}
+body.haeundae-wrapper .tab-wrap .tab-type2 li.current,
+body.haeundae-wrapper .tab-wrap .tab-type2 li.ui-state-active {border-top-color:#3a4147; border-left-color:#3a4147; border-right-color:#3a4147;}
+body.haeundae-wrapper .tab-wrap .tab-type2 li.current a,
+body.haeundae-wrapper .tab-wrap .tab-type2 li.ui-state-active a {color:#3a4147;}
+body.haeundae-wrapper .tab-wrap .tab-type3 > li.current,
+body.haeundae-wrapper .tab-wrap .tab-type3 > li.current {border-color:#6861ae;}
+body.haeundae-wrapper .tab-wrap .tab-type3 > li.current > a:after,
+body.haeundae-wrapper .tab-wrap .tab-type3 > li.current > a:after {background-color:#6861ae; background-image:none;}
+body.haeundae-wrapper .tab-wrap .tab-type3 > li .depth02 li.current a {border-bottom-color:#6861ae; color:#6861ae;}
+body.haeundae-wrapper .info-card {border-top-color:#6861ae; background-color:#fff;}
+body.haeundae-wrapper .info-card .tit-box {border-bottom-color:#d2d2d2; color:#6861ae;}
+body.haeundae-wrapper .info-card.box-green {border-top-color:#01b2b4;}
+body.haeundae-wrapper .info-card.box-green .tit-box {color:#01b2b4;}
+body.haeundae-wrapper .info-card.box-green .btn {background-color:#01b2b4; border-color:#01b2b4;}
+body.haeundae-wrapper .info-card.box-blue {border-top-color:#4b6fd8;}
+body.haeundae-wrapper .info-card.box-blue .tit-box {color:#4b6fd8;}
+body.haeundae-wrapper .medical-card dt .option {color:#00abad;}
+body.haeundae-wrapper .medical-teamList .team-list li a:hover,
+body.haeundae-wrapper .medical-teamList .team-list li a:focus {background:#6861ae; color:#fff;}
+body.haeundae-wrapper .num-gray {background-color:#929aab; color:#fff;}
+body.haeundae-wrapper .list-thumb .item .hosp-name.hosp1 {color:#6861ae;}
+body.haeundae-wrapper .initial ul li a:hover,
+body.haeundae-wrapper .initial ul li a:focus {background:#6861ae; color:#fff;}
+body.haeundae-wrapper .list-thumb .item .hosp-name {color:#6861ae;}
+body.haeundae-wrapper .reserv-form .reserv-body .select-part .part-wrap .part1 button {background-color:#fffbf0;}
+body.haeundae-wrapper .reserv-form .reserv-body .select-part .part-wrap .part2 button {background-color:#f4ffff;}
+
+/* 병원별 색상변경 : layout */
+body.haeundae-wrapper #header .lnb li .depth01:hover,
+body.haeundae-wrapper #header .lnb li .depth01:focus {color:#6861ae;}
+body.haeundae-wrapper #header .lnb li .depth01:after {background-color:#6861ae;}
+body.haeundae-wrapper #header .lnb .depth02 .inner > ul > li.current > a,
+body.haeundae-wrapper #header .lnb .depth02 .inner > ul > li > a:focus,
+body.haeundae-wrapper #header .lnb .depth02 .inner > ul > li > a:hover {background-color:#6861ae; color:#fff;}
+body.haeundae-wrapper #header .lnb-allMenuSec .lnb-body .depth02 > ul > li > a:hover,
+body.haeundae-wrapper #header .lnb-allMenuSec .lnb-body .depth02 > ul > li > a:focus {color:#6861ae;}
+body.haeundae-wrapper #header .lnb-allMenuSec .lnb-body .depth03 > li > a:hover,
+body.haeundae-wrapper #header .lnb-allMenuSec .lnb-body .depth03 > li > a:focus {color:#6861ae;}
+body.haeundae-wrapper .snb-wrap .snb > ul > li .depth1:hover,
+body.haeundae-wrapper .snb-wrap .snb > ul > li .depth1:focus {color:#6861ae;}
+body.haeundae-wrapper .snb-wrap .snb_depth2 > li.current a,
+body.haeundae-wrapper .snb-wrap .snb_depth2 > li > a:hover,
+body.haeundae-wrapper .snb-wrap .snb_depth2 > li > a:focus {color:#6861ae;}
+body.haeundae-wrapper .snb-wrap .snb .current .depth1 {color:#6861ae;}
+body.haeundae-wrapper .center-banner .banner-slider .bx-pager .bx-pager-item a.active {background-color:#6861ae;}
+
+/* 병원별 색상변경 : content */
+body.haeundae-wrapper .news-ticker:before {border-color:#6861ae; color:#6861ae;}
+body.haeundae-wrapper .visual-wrap .txt-area {background-color:#6861ae; color:#fff;}
+body.haeundae-wrapper .visual-wrap.type3 .link-area {background-color:#6861ae;}
+body.haeundae-wrapper .visual-wrap.type3 .link-area li a {color:#e5edff;}
+body.haeundae-wrapper .press-box figcaption {background-color:#6861ae;}
+body.haeundae-wrapper .link-box .tit {color:#00959e;}
+body.haeundae-wrapper .link-box .txt-go {color:#2aa4ac;}
+body.haeundae-wrapper .link-box.naver-post .tit {color:#c9fffe;}
+body.haeundae-wrapper .link-box.naver-post .tit strong {color:#fff;}
+body.haeundae-wrapper .link-box.naver-post {background-color:#0ecac8;}
+body.haeundae-wrapper .link-box.naver-post .txt-go {color:#fff;}
+body.haeundae-wrapper .tit-snb {background:#6861ae; color:#fff;}
+body.haeundae-wrapper .tit-line:before {background-color:#6861ae;}
+body.haeundae-wrapper .tit-cont {color:#6861ae;}
+body.haeundae-wrapper .intro-header:after {background-color:#6861ae;}
+body.haeundae-wrapper .name-card {background-color:#6861ae; color:#fff;}
+body.haeundae-wrapper .editor-content h4:before {background-color:#6861ae;}
+body.haeundae-wrapper .reserv-form .reserv-header h3 {color:#9fe2e0;}
+body.haeundae-wrapper .reserv-form .reserv-body .select-part .part-wrap button:hover {background-color:#6861ae; color:#fff;}
+body.haeundae-wrapper .reserv-form .ui-datepicker-calendar tbody td .ui-state-active {background-color:#6861ae; border-color:#6861ae; color:#fff;}
+body.haeundae-wrapper .reserv-time .reserv-timeBox li button.selected {background-color:#6861ae; color:#fff;}
+body.haeundae-wrapper .popup {border-top-color:#6861ae;}
+body.haeundae-wrapper .popup .txt-msg em {color:#6861ae;}
+body.haeundae-wrapper .box-comb .tit-wrap span {color:#6861ae;}
+body.haeundae-wrapper .doctor-list .info .name .option {background-color:#01b2b4;}
+body.haeundae-wrapper .doctor-introduce .option {background-color:#01b2b4;}
+body.haeundae-wrapper .circle01 {background-color:#5a93d9;}
+body.haeundae-wrapper .circle02 {background-color:#2da5d7;}
+body.haeundae-wrapper .circle03 {background-color:#01b2b4;}
+body.haeundae-wrapper .circle04 {background-color:#2b75d1;}
+body.haeundae-wrapper .circle05 {background-color:#6861ae;}
+body.haeundae-wrapper .circle01 b {color:#acd1ff;}
+body.haeundae-wrapper .circle02 b {color:#8cddff;}
+body.haeundae-wrapper .circle03 b {color:#8aecf5;}
+body.haeundae-wrapper .circle04 b {color:#96bff3;}
+body.haeundae-wrapper .circle05 b {color:#94affe;}
+body.haeundae-wrapper .department-list > ul > li.hover .tit {background-color:#6861ae;}
+body.haeundae-wrapper .department-list > ul > li.hover .conts {background:#8a84c9;}
+body.haeundae-wrapper .department-list > ul > li .sub a:focus,
+body.haeundae-wrapper .department-list > ul > li .sub a:hover {color:#f1e9ff;}
+body.haeundae-wrapper .initial_list dl dd ul li a:hover {color:#6861ae;}
+body.haeundae-wrapper .vision-wrap .vision strong {color:#6861ae;}
+body.haeundae-wrapper .vision-wrap .vision-list .circle01 {background-color:#a17dd3;}
+body.haeundae-wrapper .vision-wrap .vision-list .circle03 {background-color:#4686d6;}
+body.haeundae-wrapper .vision-box .box-type {border-top-color:#6861ae; background-color:#fff;}
+body.haeundae-wrapper .vision-box .box-type:before {background-color:#6861ae;}
+body.haeundae-wrapper .vision-box .box-type .tit-box {color:#6861ae;}
+body.haeundae-wrapper .director-list .history strong {background-color:#eceff5; color:#6861ae;}
+body.haeundae-wrapper .director-list .history strong:before {background-color:#6861ae;}
+body.haeundae-wrapper .year-box .year-list .year:before {background-color:#6861ae;}
+body.haeundae-wrapper .year-box .year-list .year {border-color:#6861ae;}
+body.haeundae-wrapper .tit-table {color:#6861ae;}
+body.haeundae-wrapper .table-row {border-top-color:#6861ae;}
+body.haeundae-wrapper .join-explain .txt p em {color:#00a2a4;}
+body.haeundae-wrapper .issue-stepS li {background-color:#7f79c1;}
+body.haeundae-wrapper .issue-stepS li > span em {color:#6861ae;}
+body.haeundae-wrapper .circle-green li {background-color:#01b2b4;}
+body.haeundae-wrapper .circle-green li > span em {color:#01b2b4;}
+body.haeundae-wrapper .medicine-list .medicine-explain .cate-blue {color:#6861ae;}
+body.haeundae-wrapper .organization-wrap .director {background:#726dad url('/haeundae/images/intro/bg_director.png') no-repeat 100% 100%;}
+body.haeundae-wrapper .organization-wrap .department {border-color:#b9b6dd; color:#726dad;}
+body.haeundae-wrapper .organization-wrap .section-area dt {border-color:#01b2b4; background:#fff; color:#01b2b4;}
+body.haeundae-wrapper .organization-wrap .section-area dt.assistant {background:#01b2b4; color:#fff;}
+body.haeundae-wrapper .organization-wrap .room-area2 ul strong {background-color:#9297a5; color:#fff;}
+body.haeundae-wrapper .numbe-blue dt {background-color:#6861ae; color:#fff;}
+body.haeundae-wrapper .cs-list .compl {background-color:#01b2b4; color:#fff;}
+body.haeundae-wrapper .praise-list .medicine-explain .praise-year {background-color:#01b2b4; color:#fff;}
+body.haeundae-wrapper .praise-view .praise-year {background-color:#01b2b4; color:#fff;}
+body.haeundae-wrapper .faq-list dt a.current em {background-color:#01b2b4;}
+body.haeundae-wrapper .faq-list dt a.current span {color:#01b2b4;}
+body.haeundae-wrapper .faq-list dd em {background-color:#6861ae; color:#fff;}
+body.haeundae-wrapper .faq-list dd em:after {background-color:#6861ae;}
+body.haeundae-wrapper .disease-pdf .blue-sanggye {color:#6861ae;}
+body.haeundae-wrapper .popup-popRights .popup-header .popup-title {color:#6861ae;}
+body.haeundae-wrapper .user-info .user-name > strong {color:#6861ae;}
+body.haeundae-wrapper .teaching-staff .box-tit {color:#fff; background-color:#6861ae;}
+body.haeundae-wrapper .notice-board .notice-desc {color:#6861ae;}
+body.haeundae-wrapper .notice-board.bg-white .notice-tit {color:#6861ae;}
+body.haeundae-wrapper .keep-going .login-desc > strong {color:#6861ae;}
+body.haeundae-wrapper .food-tit {color:#6861ae;}
+body.haeundae-wrapper .popup-findAddr .srch-result .srch-result-list > li dl .road {color:#6861ae;}
+body.haeundae-wrapper .equip-list li .equipItem {border-bottom:2px solid #7e76be;}
+
+/* 다국어 */
+body.haeundae-wrapper .greeting .img-box .name {background:#6861ae;}
+body.haeundae-wrapper .rectangle-step li {background:#7f79c1;}
+body.haeundae-wrapper .rectangle-step li > span em {color:#6861ae;}
+body.haeundae-wrapper #header .lnb .depth02 .inner > ul > li > a:hover,
+body.haeundae-wrapper #header .lnb .depth02 .inner > ul > li > a:focus,
+body.haeundae-wrapper #header .lnb .depth02 .inner > ul > li.current > a {color:#6861ae !important; background:none !important;}
