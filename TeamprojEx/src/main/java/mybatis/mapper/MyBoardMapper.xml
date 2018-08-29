@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 
+Mybatis 쿼리 성공 시 반환값
+
+select : select문에 해당하는 결과를 반환한다. 아래와 같이 select결과가 MyBoardDTO타입이라면
+	'패키지명을 포함한 클래스경로'를 resultType 속성에 써준다.
+	
+insert : '무조건' 1을 반환한다. 만약 insert가 여러 개 되더라도 성공시에는 1을 반환하게 된다.
+
+update : 업데이트 된 행의 갯수를 반환한다. 만약 업데이트된 행이 없다면 0을 반환한다.
+
+delete : 삭제된 행의 개수를 반환한다. 역시나 없다면 0을 반환한다.
+ -->
+
+<mapper namespace = "mybatis.MybatisDAOImpl">
+	
+	<select id="list" resultType="mybatis.MyBoardDTO">
+		SELECT * FROM myboard ORDER BY idx DESC
+	</select>
+	
+	<insert id ="write">
+		INSERT INTO myboard VALUES (myboard_seq.NEXTVAL, #{_id}, #{_name}, #{_contents}) 
+	</insert>	
+	
+	<select id="view" resultType="mybatis.MyBoardDTO">
+		SELECT * FROM myboard WHERE idx = #{param1} and id = #{param2}
+	</select>
+	
+	<update id = "modify">
+		UPDATE myboard SET name=#{param2}, contents=#{param3} WHERE idx = #{param1} and id=#{param4}
+	</update>
+	
+	<delete id = "delete">
+		DELETE FROM myboard WHERE idx = #{param1} and id= #{param2}
+	</delete>
+	
+	<select id="getTotalCount" resultType="int">
+		SELECT COUNT(*) FROM myboard 
+	</select>
+	
+	<select id="listPage" resultType = "mybatis.MyBoardDTO">
+		SELECT * FROM (
+			SELECT Tb.*, ROWNUM rNum FROM (
+				SELECT * FROM myboard ORDER BY idx DESC
+					) Tb
+			) WHERE rNUM BETWEEN #{0} AND #{1}
+	</select>
+</mapper>
