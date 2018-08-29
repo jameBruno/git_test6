@@ -85,7 +85,7 @@
 										<div id="lnbAllMenu4" class="depth02"></div>
 									</div>
 									<div class="col col6">
-										<h3 class="lnb-sub-header">의학백과/실시간 진료 상담</h3>
+										<h3 class="lnb-sub-header">의학백과/실시간진료상담</h3>
 										<div id="lnbAllMenu5" class="depth02"></div>
 									</div>
 									<!--
@@ -223,7 +223,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="<%=request.getContextPath() %>/stats/sourcecopy_analyzer.jsp" class="depth01">의학백과/실시간 진료 상담</a>
+						<li><a href="<%=request.getContextPath() %>/diction/diction.do" class="depth01">의학백과/실시간진료상담</a>
 							<div class="depth02">
 								<div class="inner">
 									<span class="tit_depth02">병원소개</span>

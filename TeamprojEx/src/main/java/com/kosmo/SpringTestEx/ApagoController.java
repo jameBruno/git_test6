@@ -191,5 +191,16 @@ public class ApagoController {
 	@RequestMapping("/mybatis/join.do")
 	public String join(Model model, HttpSession session) {
 		return "member/join";
-	}	
+	}
+	
+	@RequestMapping("/diction/diction.do")
+	public String diction(Model model, HttpSession session) {
+		return "diction/dictionary";
+	}
+	
+	@RequestMapping("/chat")
+	public String sock(Model model, HttpSession session) {
+		
+		return "chat";
+	}
 }

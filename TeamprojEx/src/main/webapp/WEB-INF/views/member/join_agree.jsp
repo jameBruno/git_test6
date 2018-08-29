@@ -5,8 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>제목은 여기에</title>
-<link rel="stylesheet" href="../resources/bootstrap3.3.7/css/bootstrap.min.css" />
-<script src="../resources/bootstrap3.3.7/jquery/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" href="resources/bootstrap3.3.7/css/bootstrap.min.css" />
+<script src="resources/bootstrap3.3.7/jquery/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <%@ include file="../include/sourcecopy_header.jsp" %>

@@ -14,18 +14,18 @@ String mem_flag = request.getParameter("mem_flag");
 <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="../bootstrap3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="../resources/bootstrap3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="../bootstrap3.3.7/js/bootstrap.min.js"></script>
+<script src="../resources/bootstrap3.3.7/js/bootstrap.min.js"></script>
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
-<link rel="stylesheet" href="<%=request.getContextPath() %>/css/base.css">
-<link rel="stylesheet" href="<%=request.getContextPath() %>/css/ui_style.css?180711">
-<link rel="stylesheet" href="<%=request.getContextPath() %>/css/common.css?180604">
-<link rel="stylesheet" href="<%=request.getContextPath() %>/css/layout.css?180315">
-<link rel="stylesheet" href="<%=request.getContextPath() %>/css/content.css?1807172">
-<link rel="stylesheet" href="<%=request.getContextPath() %>/css/colorChange.css">
-<link rel="stylesheet" href="<%=request.getContextPath() %>/css/content_seoul.css?1805141">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/base.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/ui_style.css?180711">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/common.css?180604">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/layout.css?180315">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/content.css?1807172">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/colorChange.css">
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/content_seoul.css?1805141">
 <style type="text/css">
 </style>
 <script type="text/javascript">
