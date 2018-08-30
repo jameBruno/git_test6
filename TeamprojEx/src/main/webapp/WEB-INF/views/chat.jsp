@@ -87,7 +87,7 @@
 </head>
 
 <body>
-
+	<h3>상담할 내용을 입력하세요.</h3>
     <input type="text" id="message" />
 
     <input type="button" id="sendBtn" value="전송" />
