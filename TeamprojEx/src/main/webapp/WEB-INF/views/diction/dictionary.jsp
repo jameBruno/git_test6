@@ -40,12 +40,31 @@ pageContext.setAttribute("BR", "<br/>");
 <%@ include file="../include/sourcecopy_header.jsp" %>
 <div class="container">
 	<div class="col-xs-3 col-md-3">
-		<!-- 좌측영역 -->
 		<%@ include file="left_menu.jsp" %>
 	</div>
 	<div class="col-xs-9 col-md-9">	
 	<!-- Contents영역 시작-->
-		<h3>검색결과</small></h3>
+	<br/><br/>
+	<h2>질환명을 검색하세요.</h2>
+<form class="form-inline">
+	<!-- <div class="form-group">
+		<select name="searchColumn" class="form-control">
+			<option value="title">제목</option>
+			<option value="content">내용</option>
+			<option value="both">제목+내용</option>
+		</select>
+	</div> -->
+	<div class="input-group">
+		<input type="text" name="searchWord"  class="form-control"/>
+		<div class="input-group-btn">
+			<button type="submit" class="btn btn-default">
+				<i class="glyphicon glyphicon-search"></i>
+			</button>
+		</div>
+	</div>
+</form>	
+<br/>
+		<h4>검색결과</h4>
 		<table class="table table-bordered table-striped">
 		<colgroup>
 			<col width="20%"/>
