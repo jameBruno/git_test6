@@ -35,20 +35,19 @@
 		<beans:property name="dataSource" ref="dataSource"></beans:property>
 	</beans:bean>
 	
-	<!-- Mybatis 이용한 방명록 제작 1차버전 : JDBCTemplate을 이용하기 위한 빈 생성 -->
-	<beans:bean name ="myDao" class= "mybatis.MyBoardDAO">
+	<!-- Mybatis 이용한 의학백과 제작 1차버전 : JDBCTemplate을 이용하기 위한 빈 생성 -->
+	<beans:bean name ="dicDao" class= "diction.DicDAO">
 		<beans:property name = "template" ref = "template"/>
 	</beans:bean>
 	
 	<!-- Mybatis 이용한 방명록 제작 2차버전 : Mybatis로 컨버팅하기 -->
 	<beans:bean id = "sqlSessionFactory" class = "org.mybatis.spring.SqlSessionFactoryBean">
 		<beans:property name = "dataSource" ref = "dataSource"/>
-		<beans:property name = "mapperLocations" value = "classpath:mybatis/mapper/*.xml"/>
+		<beans:property name = "mapperLocations" value = "classpath:diction/mybatis/mapper/*.xml"/>
 	</beans:bean>
 	<beans:bean id = "sqlSession" class = "org.mybatis.spring.SqlSessionTemplate">
 		<beans:constructor-arg index="0" ref = "sqlSessionFactory"/>
 	</beans:bean>
-	
 	
 	<context:component-scan base-package="com.kosmo.SpringTestEx" />
 	<!-- 웹소켓 -->	

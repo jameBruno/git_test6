@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.ui.Model;
 
-import diction.DicVO;
+import mybatis.DicVO;
 import springBoard.model.JDBCTemplateDAO;
 import springBoard.model.SpringBbsDAO;
 

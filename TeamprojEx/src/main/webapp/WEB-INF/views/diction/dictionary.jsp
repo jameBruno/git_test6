@@ -2,10 +2,6 @@
    pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-<%
-pageContext.setAttribute("CRLF", "\r\n");
-pageContext.setAttribute("BR", "<br/>");
-%>
 <!DOCTYPE html>
  
 <head>
@@ -62,7 +58,22 @@ pageContext.setAttribute("BR", "<br/>");
 			</button>
 		</div>
 	</div>
-</form>	
+</form>
+	<a href="../diction/diclist.do?charc=ㄱ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㄱ</a>
+	<a href="../diction/diclist.do?charc=ㄴ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㄴ</a>
+	<a href="../diction/diclist.do?charc=ㄷ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㄷ</a>
+	<a href="../diction/diclist.do?charc=ㄹ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㄹ</a>
+	<a href="../diction/diclist.do?charc=ㅁ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㅁ</a>
+	<a href="../diction/diclist.do?charc=ㅂ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㅂ</a>
+	<a href="../diction/diclist.do?charc=ㅅ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㅅ</a>
+	<a href="../diction/diclist.do?charc=ㅇ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㅇ</a>
+	<a href="../diction/diclist.do?charc=ㅈ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㅈ</a>
+	<a href="../diction/diclist.do?charc=ㅊ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㅊ</a>
+	<a href="../diction/diclist.do?charc=ㅋ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㅋ</a>
+	<a href="../diction/diclist.do?charc=ㅌ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㅌ</a>
+	<a href="../diction/diclist.do?charc=ㅍ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㅍ</a>
+	<a href="../diction/diclist.do?charc=ㅎ" onmouseover = "this.style.color = 'blue';" onmouseout="this.style.color ='#000'">ㅎ</a>
+
 <br/>
 		<h4>검색결과</h4>
 		<table class="table table-bordered table-striped">
@@ -73,12 +84,12 @@ pageContext.setAttribute("BR", "<br/>");
 		<tbody>
 			<tr>
 				<th class="text-center" style="vertical-align:middle;">제목</th>
-				<td>${viewRow.title }</td>
+				<td>${vo.title }</td>
 			</tr>
 			<tr>
 				<th class="text-center" style="vertical-align:middle;">내용</th>
 				<td>
-					${viewRow.dic_contents}					
+					${vo.dic_contents}					
 				</td>
 			</tr>
 		</tbody>

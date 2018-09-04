@@ -12,7 +12,7 @@
 
 <meta charset="UTF-8">
 
-<title>JSP</title>
+<title>실시간진료상담</title>
 
 <script type="text/javascript" src="<c:url value="/resources/js/jquery-3.1.1.min.js"/>"></script>
 

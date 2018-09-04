@@ -11,7 +11,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.PreparedStatementSetter;
 
-import diction.DicVO;
+import mybatis.DicVO;
+
 /*
  JdbcTemplate 관련 주요 메소드
  

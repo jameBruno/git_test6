@@ -28,7 +28,7 @@ import springBoard.model.PagingUtil;
 
 @Controller
 public class ApagoController {
-	
+	/*
 	MyBoardDAO dao;
 	
 	@Autowired	
@@ -76,7 +76,7 @@ public class ApagoController {
 		
 		return "07Mybatis/list";
 	}
-	
+	*/
 	@RequestMapping("/mybatis/login.do")
 	public String login(Model model, HttpSession session) {
 		return "member/login";
