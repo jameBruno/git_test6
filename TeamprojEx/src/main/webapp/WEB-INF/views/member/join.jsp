@@ -87,8 +87,7 @@ String mem_flag = request.getParameter("mem_flag");
 					<div class="tit-tableWrap mar-t30">
 						<h4 class="tit-table">필수입력사항</h4>
 						<p class="essential">
-							<em class="emphasis-red">* 필수입력사항</em>입니다. 빠짐없이 기재해 주세요.(14세 미만은
-							회원가입이 되지 않습니다)
+							<em class="emphasis-red">* 필수입력사항</em>입니다.
 						</p>
 					</div>
 
