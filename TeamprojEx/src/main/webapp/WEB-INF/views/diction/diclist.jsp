@@ -1,6 +1,19 @@
+<%@page import="diction.DicVO"%>
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%
+ArrayList<DicVO> list = (ArrayList<DicVO>)request.getAttribute("list");
+String trimTitle[] = new String[100];
+int i = 0;
+for(DicVO vo : list) {
+	/* 
+	trimTitle[i] = vo.getTitle().trim();
+	i++;
+	 */
+}
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,12 +34,21 @@
 	<col width="*"/>
 </colgroup>
 <tbody>
-	<c:forEach items="${list }" var = "row" >
+<%
+int j = 0;
+for(DicVO vo : list){
+	
+%>
 	<tr>
 		<td class="text-center" style="vertical-align:middle;">
-		<a href="../diction/dicView.do?title=${row.title }">${row.title }</a></td>
+		<a href="../diction/dicView.do?dic_id=<%=vo.getDic_id()%>">
+		<%=vo.getTitle() %>
+		<%-- <%= trimTitle[j] %> --%>
+		</a></td>
 	</tr>
-	</c:forEach>
+<%
+	j++;
+} %>
 </tbody>
 </table>
 

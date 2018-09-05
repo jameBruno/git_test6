@@ -62,10 +62,16 @@ public class DicController {
 		command = new ViewCommand();
 		command.execute(model);
 		
-		String searchData = "기침";
-		
-		DicVO vo = sqlSession.getMapper(MybatisDicImpl.class).selection(searchData);		
-		
+		String searchData = req.getParameter("searchWord");
+		DicVO vo = null;
+		if(searchData != null) {
+			vo = sqlSession.getMapper(MybatisDicImpl.class).selection(searchData);		
+			if(vo == null) {
+				searchData = searchData + " ";
+				vo = sqlSession.getMapper(MybatisDicImpl.class).selection(searchData);
+			}
+		}
+		/*
 		Map<String,Object> param = new HashMap<String,Object>();
 		
 		String queryStr = "";
@@ -76,7 +82,7 @@ public class DicController {
 			//파라미터 추가
 			queryStr = String.format("searchWord=%s&", searchWord);
 		}
-		
+		*/
 		model.addAttribute("vo",vo);
 		
 		return "diction/dictionary";
@@ -89,10 +95,12 @@ public class DicController {
 		
 		ArrayList<DicVO> list = sqlSession.getMapper(MybatisDicImpl.class).dicList(charc);
 		
+		/*
 		for(DicVO vo : list) {
 			String temp = vo.getTitle().trim();
 			vo.setTitle(temp);
-		}
+			
+		}*/
 		
 		model.addAttribute("list",list);
 		
@@ -102,9 +110,9 @@ public class DicController {
 	@RequestMapping("/diction/dicView.do")
 	public String dicView(Model model, HttpSession session, HttpServletRequest req) {
 		
-		String title = req.getParameter("title");
+		String dic_id = req.getParameter("dic_id");
 		
-		DicVO vo = sqlSession.getMapper(MybatisDicImpl.class).dicView(title);
+		DicVO vo = sqlSession.getMapper(MybatisDicImpl.class).dicView(Integer.parseInt(dic_id));
 		
 		model.addAttribute("vo",vo);
 		

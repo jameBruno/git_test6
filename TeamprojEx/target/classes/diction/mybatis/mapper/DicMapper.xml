@@ -14,6 +14,6 @@
 	</select>
 	
 	<select id="dicView" resultType="diction.DicVO">
-		SELECT * FROM global_dic WHERE title=#{0}
+		SELECT * FROM global_dic WHERE dic_id=#{0}
 	</select>
 </mapper>

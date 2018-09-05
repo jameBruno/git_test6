@@ -10,5 +10,5 @@ public interface MybatisDicImpl {
 	
 	public ArrayList<DicVO> dicList(String charc);
 	
-	public DicVO dicView(String title);
+	public DicVO dicView(int id);
 }

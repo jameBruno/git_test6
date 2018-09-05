@@ -31,6 +31,15 @@
 <script type="text/javascript" src="/common/js/libs/html5shiv-printshiv.js"></script>
 <![endif]--%>
 </head>
+<script>
+function searchCheck(f){
+	if(f.searchWord.value==""){
+		alert("검색할 단어를 입력하세요");
+		f.searchWord.focus();
+		return false;
+	}
+}
+</script>
 <body>
 <!-- 상단 영역 -->
 <%@ include file="../include/sourcecopy_header.jsp" %>
@@ -42,7 +51,7 @@
 	<!-- Contents영역 시작-->
 	<br/><br/>
 	<h2>질환명을 검색하세요.</h2>
-<form class="form-inline">
+<form class="form-inline" onsubmit="return searchCheck(this);" action="diction.do">
 	<!-- <div class="form-group">
 		<select name="searchColumn" class="form-control">
 			<option value="title">제목</option>
