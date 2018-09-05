@@ -58,7 +58,7 @@
    }
 </script>
                         <div class="login-input">
-                           <form method="post" action="./login_process.jsp" name="loginFrm" id="login1" onsubmit="return loginValidate(this);">
+                           <form method="post" action="../member/login.do" name="loginFrm" id="login1" onsubmit="return loginValidate(this);">
                            <input type="hid-den" name="backUrl" value="${param.backUrl}"/>
                            <input type="hidden" name="hpid" value="DA">
                            <input type="hidden" name="r_url" id="r_url" value="/seoul/member/join.asp%3F%26rnd%3D70554">
@@ -66,7 +66,7 @@
                               <legend>로그인 영역</legend>
                               <%
                               //세션영역에 회원정보가 없다면 로그인화면 출력
-                              if(session.getAttribute("USER_ID")==null)
+                              if(session.getAttribute("USER_NAME")==null)
                               {
                               %>
                               <div class="row gutter6">                                 

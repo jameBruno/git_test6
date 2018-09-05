@@ -125,4 +125,10 @@ public class MemberController {
 	      }	
 	}
 	
+	@RequestMapping("/member/login.do")
+	public String login(Model model, HttpSession session) {
+		return "member/login_process";
+	}
+	
+	
 }
