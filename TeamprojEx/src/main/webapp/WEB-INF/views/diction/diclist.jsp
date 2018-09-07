@@ -21,6 +21,9 @@ for(DicVO vo : list) {
 <title>제목은 여기에</title>
 <link rel="stylesheet" href="../resources/bootstrap3.3.7/css/bootstrap.min.css" />
 <script src="../resources/bootstrap3.3.7/jquery/jquery-3.2.1.min.js"></script>
+<style>
+a{font-size:30px;}
+</style>
 </head>
 <body>
 <%@ include file="../include/sourcecopy_header.jsp" %>
@@ -29,10 +32,11 @@ for(DicVO vo : list) {
 <h4>검색결과</h4>
 
 <table class="table table-bordered table-striped">
+ 
 <colgroup>
-	<col width="20%"/>
-	<col width="*"/>
+	<col width="30%"/>
 </colgroup>
+
 <tbody>
 <%
 int j = 0;

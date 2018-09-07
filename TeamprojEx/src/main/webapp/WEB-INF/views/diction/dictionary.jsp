@@ -30,6 +30,9 @@
 <!--[if lt IE 9]>
 <script type="text/javascript" src="/common/js/libs/html5shiv-printshiv.js"></script>
 <![endif]--%>
+<style>
+a{font-size:50px;}
+</style>
 </head>
 <script>
 function searchCheck(f){
