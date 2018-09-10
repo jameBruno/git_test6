@@ -1,11 +1,14 @@
 package com.kosmo.SpringTestEx;
 
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.ibatis.session.SqlSession;
@@ -54,8 +57,34 @@ public class DicController {
 	BbsCommandImpl command = null;
 	
 	@RequestMapping("/diction/diction.do")
-	public String diction(Model model, HttpSession session, HttpServletRequest req) {
+	public String diction(Model model, HttpSession session, HttpServletRequest req, HttpServletResponse resp) {
 		System.out.println("view() 메소드 호출됨");
+		
+		if(session.getAttribute("USER_ID") == null || session.getAttribute("IDX") ==null)
+	    {
+	         String backUrl = req.getRequestURI()+"?"+req.getQueryString();
+	         
+	         PrintWriter out = null;
+			try {
+				out = resp.getWriter();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			resp.setContentType("text/html;charset=utf-8");
+	        String str = ""
+	                  + "<script>"
+	                  + "  alert('"
+	                  + "로그인 정보가 없습니다"
+	                  + "'); "
+	                  + " history.go(-1); "
+	                  + "</script>"; 
+	         out.println(str);
+	         out.flush();
+	         /* 위의 JS함수가 동작후 return이 없으면 아래  
+	         JSP코드가 실행될수 있기때문에 반드시 return으로
+	         실행을 멈춰줘야 한다.*/
+	         return "home";
+	    }
 		
 		//컨트롤러가 받은 파라미터 전체를 ViewCommand로 넘김
 		model.addAttribute("req", req);
